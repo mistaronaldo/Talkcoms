@@ -1,0 +1,60 @@
+body {
+    /* font-family: 'Poppins', Poppins, 'montseratt'; */
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+    color: #282964;
+}
+
+.bg-talkgreen {
+    background: #69A71A;
+}
+
+.btn {
+    border: 1px #0000001c solid;
+    background: #F6F6F6;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 18px 25px;
+}
+
+.btn.select {
+    background: rgba(138, 196, 64, 0.1);
+    border: #6aa71a7e 2px solid;
+    color: #69A71A;
+}
+
+.sect-selected {
+    color: #0D80BA;
+}
+
+.blue-greed-gradient {
+    background: rgb(13, 128, 186);
+    background: linear-gradient(24deg, rgba(13, 128, 186, 1) 75%, rgba(138, 196, 64, 1) 100%);
+}
+
+.bg-bluelight-gradient {
+    background: rgb(13, 128, 186);
+    background: linear-gradient(24deg, rgba(13, 128, 186, 0.5018382352941176) 80%, rgba(138, 196, 64, 1) 100%);
+}
+
+.bg-circle-grad {
+    background: rgb(13, 128, 186);
+    background: linear-gradient(24deg, rgba(13, 128, 186, 0.6558998599439776) 20%, rgba(13, 128, 186, 0.6558998599439776) 57%, rgba(138, 196, 64, 0) 100%);
+}
+
+.bg-bro {
+    background-image: url(../images/landing-bro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sect-selected .sect {
+    background: rgb(13, 128, 186);
+    background: radial-gradient(circle, rgba(13, 128, 186, 0.2466561624649859) 16%, rgba(138, 196, 64, 0) 100%);
+}
