@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <script src="./js/tailwind.js"></script>
-    <link rel="stylesheet" href="./css/styles.css">
+    <script src="../js/tailwind.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 <div class="flex ">
                     <a href="/index.html" class="-m-1.5 p-1.5">
                         <span class="sr-only">talkcoms</span>
-                        <img class="h-24 w-auto" src="./images/logo.png" alt="">
+                        <img class="h-24 w-auto" src="../images/logo.png" alt="">
                     </a>
                 </div>
                 <div class="flex lg:hidden">
@@ -167,19 +167,18 @@
 
 
 
-                    <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Services</a>
                     <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Integrations</a>
                     <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Blogs</a>
                     <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Resource Center</a>
                     <a href="#" class="text-lg font-semibold leading-6 nav-link d uppercase">About Us</a>
                 </div>
-                <div class="hidden lg:flex lg:flex-1 px-8 gap-x-6">
+                <div class="hidden lg:flex lg:flex-1 max-w-72 gap-x-4">
                     <a href="#"
-                        class="text-md bg-talkgreen text-white rounded w-full font-semibold justify-center items-center flex leading-6">
+                        class="text-md bg-talkgreen text-white px-4 rounded w-full font-semibold justify-center items-center flex leading-6">
                         BOOK A DEMO
                     </a>
                     <a href="#"
-                        class="text-md border-2 rounded w-full p-4  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                        class="text-md border-2 rounded w-full px-4  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
                         Started
                     </a>
                 </div>
@@ -287,14 +286,14 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img class="w-40 -top-10 absolute -right-10" src="./images/green-dot.png" alt="" srcset="">
-                        <img class="relative z-10" src="./images/hero-image.png" alt="" srcset="">
-                        <img class="w-40 bottom-36 absolute -left-10" src="./images/blue-dot.png" alt="" srcset="">
+                        <img class="w-40 -top-10 absolute -right-10" src="../images/green-dot.png" alt="" srcset="">
+                        <img class="relative z-10" src="../images/hero-image.png" alt="" srcset="">
+                        <img class="w-40 bottom-36 absolute -left-10" src="../images/blue-dot.png" alt="" srcset="">
                     </div>
                 </div>
 
                 <!-- <div class="hero absolute h-full">
-                    <img src="./images/landing-bro.png" alt="" srcset="">
+                    <img src="../images/landing-bro.png" alt="" srcset="">
                 </div> -->
             </div>
             <div class="absolute inset-l-0 rounded-full -z-10 transform-gpu overflow-hidden blur-3xl "
@@ -311,57 +310,182 @@
 
         <div class="mx-auto p-24  container">
 
-            <div class="carousel w-full h-full" data-carousel>
-                <div class="flex justify-between mb-4">
-                    <h2 class="text-4xl text-blue-900 font-bold">Talkcoms CC Features </h2>
-                    <div class="flex">
-                        <button class="carousel-control prev" data-carousel-control data-carousel-control-prev>
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control next" data-carousel-control data-carousel-control-next>
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- Carousel items here -->
 
-                <!-- <div class="carousel-item w-full h-full" data-carousel-item>
-                    <div class="card w-96 h-full glass">
-                        <figure class="px-10 pt-10">
-                            <img src="image1.jpg" alt="Image 1" class="rounded-xl">
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Card title 1</h2>
-                            <p>Card text 1</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item w-full h-full" data-carousel-item>
-                    <div class="card w-96 h-full glass">
-                        <figure class="px-10 pt-10">
-                            <img src="image2.jpg" alt="Image 2" class="rounded-xl">
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Card title 2</h2>
-                            <p>Card text 2</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item w-full h-full" data-carousel-item>
-                    <div class="card w-96 h-full glass">
-                        <figure class="px-10 pt-10">
-                            <img src="image3.jpg" alt="Image 3" class="rounded-xl">
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Card title 3</h2>
-                            <p>Card text 3</p>
-                        </div>
-                    </div>
-                </div> -->
+            <div class="relative">
 
+                <div id="animation-carousel" class="relative w-full " data-carousel="static">
+                    <div class="flex justify-between mb-5">
+                        <h2 class="text-4xl text-blue-900 font-bold">Talkcoms CC Features </h2>
+                        <div class="flex gap-8">
+                            <button type="button"
+                                class=" flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-prev>
+                                <span
+                                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M5 1 1 5l4 4" />
+                                    </svg>
+                                    <span class="sr-only">Previous</span>
+                                </span>
+                            </button>
+                            <button type="button"
+                                class="flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-next>
+                                <span
+                                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 9 4-4-4-4" />
+                                    </svg>
+                                    <span class="sr-only">Next</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Carousel wrapper -->
+                    <div class="relative min-h-[45rem] overflow-hidden rounded-lg ">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-200 h-full ease-linear" data-carousel-item>
+                            <div class="flex gap-8">
+                                <div class="p-2 h-auto bg-white border w-4/12 rounded-xl">
+                                    <div class="relative border h-80 rounded-xl w-full">
+
+                                    </div>
+                                    <div class="text-center my-6">
+
+                                        <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Inbound Call Handling
+                                        </h1>
+                                        <p class="text px-14 text-blue-600">Exceptional Customer Support at Your
+                                            Fingertips</p>
+                                        <p class="p-4 text-gray-600 leading-7 text-sm">Experience seamless and
+                                            customer centric inbound call
+                                            center services. From inquiries to
+                                            issue resolution, we ensure every
+                                            interaction leaves a positive
+                                            impression.</p>
+                                    </div>
+                                </div>
+                                <div class="p-2 h-auto bg-white border w-4/12 rounded-xl">
+                                    <div class="relative border h-80 rounded-xl w-full">
+
+                                    </div>
+                                    <div class="text-center my-6">
+
+                                        <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Outbound Call
+                                            Campaigns
+                                        </h1>
+                                        <p class="px-14  text-blue-600">Strategic Outbound Solutions for
+                                            Business Expansion</p>
+                                        <p class="p-4 text-gray-600 leading-7 text-sm">
+                                            Boost your sales, and nurture customer
+                                            relationships with our proactive outbound
+                                            call campaigns. Our team excels in lead
+                                            generation, market research, customer
+                                            surveys, and promotional calls, helping you
+                                            connect with potential customers and gather
+                                            valuable feedback.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-2 h-auto bg-white border w-4/12 rounded-xl">
+                                    <div class="relative border h-80 rounded-xl w-full">
+
+                                    </div>
+                                    <div class="text-center my-6">
+
+                                        <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Customer Service
+                                            Outsourcing
+                                        </h1>
+                                        <p class="px-14  text-blue-600">Building Lasting Relationships</p>
+                                        <p class="p-4 text-gray-600 leading-7 text-sm">
+                                            Deliver exceptional customer service
+                                            without the overhead. Our trained agents
+                                            provide 24/7 support across multiple
+                                            channels, including phone, email, and live
+                                            chat, ensuring your customers receive the
+                                            help they need when they need it.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="hidden duration-200 ease-linear" data-carousel-item>
+                            <div class="flex gap-8">
+                                <div class="p-2 h-auto bg-white border w-4/12 rounded-xl">
+                                    <div class="relative border h-80 rounded-xl w-full">
+
+                                    </div>
+                                    <div class="text-center my-6">
+
+                                        <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Second View
+                                        </h1>
+                                        <p class="text px-14 text-blue-600">Exceptional Customer Support at Your
+                                            Fingertips</p>
+                                        <p class="p-4 text-gray-600 leading-7 text-sm">Experience seamless and
+                                            customer centric inbound call
+                                            center services. From inquiries to
+                                            issue resolution, we ensure every
+                                            interaction leaves a positive
+                                            impression.</p>
+                                    </div>
+                                </div>
+                                <div class="p-2 h-auto bg-white border w-4/12 rounded-xl">
+                                    <div class="relative border h-80 rounded-xl w-full">
+
+                                    </div>
+                                    <div class="text-center my-6">
+
+                                        <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Outbound Call
+                                            Campaigns
+                                        </h1>
+                                        <p class="px-14  text-blue-600">Strategic Outbound Solutions for
+                                            Business Expansion</p>
+                                        <p class="p-4 text-gray-600 leading-7 text-sm">
+                                            Boost your sales, and nurture customer
+                                            relationships with our proactive outbound
+                                            call campaigns. Our team excels in lead
+                                            generation, market research, customer
+                                            surveys, and promotional calls, helping you
+                                            connect with potential customers and gather
+                                            valuable feedback.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="p-2 h-auto bg-white border w-4/12 rounded-xl">
+                                    <div class="relative border h-80 rounded-xl w-full">
+
+                                    </div>
+                                    <div class="text-center my-6">
+
+                                        <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Customer Service
+                                            Outsourcing
+                                        </h1>
+                                        <p class="px-14  text-blue-600">Building Lasting Relationships</p>
+                                        <p class="p-4 text-gray-600 leading-7 text-sm">
+                                            Deliver exceptional customer service
+                                            without the overhead. Our trained agents
+                                            provide 24/7 support across multiple
+                                            channels, including phone, email, and live
+                                            chat, ensuring your customers receive the
+                                            help they need when they need it.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
+
 
 
 
@@ -372,7 +496,25 @@
 
             <div class="grid grid-cols-3">
                 <div>
-                    <div class="flex h-16 w-16 my-4 bg-gray-200 rounded-full">
+                    <div class="flex h-16 w-16 my-4 bg-gray-200 rounded-full justify-center items-center">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7550_127)">
+                                <path
+                                    d="M5.90095 22.3014C6.17023 22.322 6.45832 22.2886 6.70538 22.3734C7.1995 22.543 7.50127 22.3588 7.84835 22.011C12.5279 17.323 17.222 12.6487 21.9204 7.97955C22.1683 7.73281 22.247 7.51349 22.182 7.16138C21.3844 2.8589 25.6895 -1.00579 29.8861 0.234752C30.517 0.421518 30.6341 0.902997 30.1477 1.39133C29.2629 2.2789 28.3704 3.15875 27.4702 4.0309C27.2847 4.21081 27.2052 4.36245 27.3147 4.62376C27.4634 4.97673 27.5848 5.34512 27.6788 5.71694C27.7609 6.04421 27.9336 6.22155 28.2627 6.30636C28.7423 6.43059 29.2561 6.79213 29.6715 6.69532C30.0879 6.59851 30.405 6.06648 30.7589 5.71779C31.3779 5.10781 31.9882 4.48925 32.608 3.88012C33.1475 3.34895 33.6099 3.48517 33.8014 4.22538C34.8922 8.44047 31.3351 12.4602 27.0308 11.8554C26.5803 11.792 26.2828 11.8699 25.952 12.2023C21.2493 16.928 16.5313 21.6392 11.809 26.3452C11.5901 26.5636 11.5405 26.7573 11.5944 27.0554C12.062 29.6341 10.8891 32.0732 8.60405 33.3129C6.42755 34.4943 3.67999 34.1294 1.81893 32.4116C0.100634 30.825 -0.472986 28.1957 0.411807 25.9631C1.29062 23.7459 3.4637 22.3023 5.90095 22.3031V22.3014ZM28.373 1.51042C28.3525 1.47443 28.332 1.43759 28.3114 1.40161C28.1866 1.39476 28.0618 1.37934 27.9379 1.38191C24.9971 1.44873 22.6966 4.20396 23.2754 7.08598C23.4344 7.87931 23.2395 8.32995 22.7043 8.86112C17.8196 13.7059 12.9596 18.5755 8.09711 23.4426C7.8227 23.7167 7.54145 23.7947 7.17214 23.6748C6.44037 23.4374 5.69492 23.4195 4.93921 23.566C2.51821 24.0354 0.841808 26.388 1.21539 28.8065C1.60179 31.3142 3.86635 33.079 6.33693 32.7997C9.25034 32.4699 11.1268 29.7018 10.3437 26.8781C10.2505 26.5431 10.2309 26.2681 10.5138 25.9862C15.549 20.9692 20.5765 15.9445 25.5989 10.9147C25.8614 10.6517 26.1127 10.5737 26.4735 10.6594C28.5252 11.1486 30.2537 10.5591 31.613 8.97678C32.4217 8.03438 32.6841 6.88294 32.6251 5.5653C32.473 5.69638 32.3866 5.76149 32.3105 5.83688C31.6634 6.47942 31.0103 7.11511 30.3768 7.77136C30.1246 8.03267 29.8682 8.09092 29.5322 7.97269C28.8209 7.72253 28.1071 7.47579 27.3856 7.25562C27.0505 7.15367 26.8539 6.96262 26.7496 6.63535C26.547 5.99794 26.3598 5.35197 26.1042 4.73513C25.8768 4.18597 26.0024 3.80387 26.429 3.41577C27.1001 2.80664 27.7276 2.14868 28.3738 1.51127L28.373 1.51042Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M9.35193 29.0223C9.27841 29.1431 9.19891 29.3453 9.05957 29.4901C8.44577 30.1249 7.81145 30.7392 7.19252 31.3706C6.95401 31.6139 6.68815 31.6628 6.37355 31.5728C5.48449 31.3175 4.58773 31.0862 3.70977 30.7966C3.50631 30.7298 3.28319 30.495 3.21394 30.2894C2.92158 29.413 2.68563 28.5177 2.42404 27.631C2.33086 27.3157 2.37531 27.0527 2.61981 26.8128C3.24045 26.2054 3.85339 25.5886 4.46291 24.9692C4.72878 24.6984 5.0126 24.6179 5.3896 24.7353C6.21797 24.994 7.05745 25.2185 7.89266 25.4549C8.17905 25.5355 8.41756 25.6545 8.50817 25.9767C8.76549 26.8942 9.03392 27.8092 9.29636 28.725C9.31603 28.7927 9.32287 28.8647 9.35108 29.0232L9.35193 29.0223ZM8.08074 28.7585C7.88497 28.0842 7.72254 27.4631 7.51566 26.8582C7.46266 26.704 7.29083 26.5327 7.1361 26.4804C6.58471 26.2928 6.02049 26.1412 5.45371 26.0024C5.32975 25.9724 5.13826 26.0101 5.04594 26.0923C4.62277 26.4727 4.21158 26.8685 3.82603 27.2857C3.72516 27.3954 3.66532 27.619 3.69951 27.7638C3.83287 28.3309 3.9953 28.8921 4.18337 29.4438C4.23295 29.5886 4.39025 29.7497 4.53387 29.7994C5.08441 29.9896 5.6452 30.1566 6.21198 30.2894C6.36842 30.3263 6.60608 30.2654 6.72662 30.1583C7.13097 29.8011 7.50199 29.4044 7.8807 29.018C7.96362 28.9341 8.02602 28.8296 8.07988 28.7576L8.08074 28.7585Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M11.1635 23.5343C10.9541 23.3082 10.7147 23.0486 10.5078 22.825C14.4796 18.8455 18.4675 14.8497 22.482 10.8274C22.6974 11.0493 22.9428 11.3029 23.1539 11.5205C19.1574 15.5248 15.1703 19.5197 11.1635 23.5343Z"
+                                    fill="#69A71A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_7550_127">
+                                    <rect width="34" height="34" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
                     </div>
                     <h1 class="font-bold text-lg text-blue-900">Industry Expertise</h1>
@@ -386,7 +528,28 @@
                         meet the unique demands of your business.</p>
                 </div>
                 <div>
-                    <div class="flex h-16 w-16 my-4 bg-gray-200 rounded-full">
+                    <div class="flex h-16 w-16 my-4 bg-gray-200 rounded-full justify-center items-center">
+                        <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7550_133)">
+                                <path
+                                    d="M30.5131 16.0205C31.1058 15.5318 31.6495 15.0784 32.199 14.6315C32.6816 14.2393 33.0108 14.272 33.409 14.7411C33.5365 14.8911 33.6685 15.0379 33.79 15.1932C34.0967 15.5847 34.0681 15.9344 33.6898 16.2482C32.3145 17.3899 30.9373 18.5284 29.556 19.663C29.2122 19.9455 28.8047 19.9044 28.5093 19.5599C27.3551 18.2159 26.2035 16.8693 25.0572 15.5181C24.7041 15.1019 24.7552 14.7535 25.1893 14.4031C25.3599 14.2654 25.5192 14.1115 25.697 13.9842C26.0933 13.7017 26.455 13.7605 26.7657 14.131C27.2542 14.713 27.75 15.2904 28.2883 15.9233C28.2883 15.1971 28.3321 14.5369 28.2783 13.8844C28.1867 12.7714 27.9411 11.6838 27.5462 10.6334C26.8559 8.79744 25.8132 7.18594 24.3789 5.8191C22.5416 4.06798 20.3666 2.93732 17.8702 2.44017C15.2797 1.92409 12.7402 2.15766 10.2897 3.15653C7.76748 4.18411 5.77361 5.84846 4.30276 8.09999C3.29786 9.63777 2.65868 11.321 2.40115 13.1407C1.91264 16.5959 2.68855 19.7498 4.76937 22.5702C6.23424 24.5556 8.14847 25.9981 10.4722 26.9102C12.4561 27.6892 14.5117 27.943 16.6317 27.7505C17.0903 27.7087 17.3784 27.909 17.4607 28.3501C17.5065 28.5947 17.5297 28.8446 17.541 29.0932C17.5662 29.6321 17.3266 29.8911 16.7724 29.9381C13.9555 30.1762 11.2521 29.7509 8.70999 28.5204C4.28285 26.3771 1.44935 22.9219 0.386708 18.2022C-0.64275 13.628 0.397328 9.41398 3.30716 5.70557C5.30368 3.15849 7.93872 1.47261 11.0868 0.5827C13.0382 0.0300922 15.0221 -0.132363 17.0445 0.107731C19.9723 0.455476 22.5941 1.52481 24.88 3.34378C27.5177 5.44265 29.2487 8.13131 30.085 11.368C30.4733 12.8706 30.6087 14.3985 30.5138 16.0198L30.5131 16.0205Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M15.2908 13.7619C16.226 12.8413 17.146 11.9351 18.0666 11.0302C19.3489 9.77033 20.6299 8.50984 21.9156 7.25392C22.1831 6.99294 22.3862 6.99686 22.6583 7.24739C22.8442 7.41833 23.0254 7.59383 23.1966 7.77847C23.3964 7.99377 23.403 8.22147 23.1966 8.44199C23.1369 8.50593 23.0725 8.56595 23.0101 8.62728C20.5775 11.0165 18.1442 13.405 15.7116 15.7942C15.3618 16.1374 15.2032 16.1452 14.8548 15.8033C13.2127 14.1932 11.5732 12.5803 9.93446 10.9662C9.68556 10.7209 9.68821 10.4893 9.93645 10.2316C10.0884 10.0737 10.2491 9.92431 10.4057 9.77099C10.7004 9.48066 10.9234 9.47739 11.2234 9.77099C12.241 10.7686 13.2558 11.7681 14.2727 12.7663C14.6012 13.0886 14.9311 13.4096 15.2908 13.7606V13.7619Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M29.6005 25.7397C29.803 25.7534 29.9709 25.7182 30.0844 25.7802C30.5895 26.0568 30.2921 26.5389 30.3459 26.9284C30.3837 27.2031 30.1461 27.284 29.9132 27.3173C29.8176 27.331 29.72 27.3297 29.6005 27.3362C29.6005 27.6879 29.6092 28.0225 29.5985 28.3566C29.5866 28.7285 29.4665 28.8407 29.0934 28.8511C28.8837 28.857 28.6733 28.8518 28.4629 28.8511C28.1649 28.8511 28.0135 28.7011 28.0109 28.4107C28.0076 28.0643 28.0102 27.7172 28.0102 27.3349C27.8788 27.329 27.7626 27.3192 27.6465 27.3192C26.6403 27.3179 25.6334 27.3303 24.6271 27.3088C24.4174 27.3042 24.1074 27.2325 24.0304 27.0922C23.9534 26.9526 24.057 26.6511 24.1751 26.4848C25.4336 24.7043 26.7053 22.9323 27.9923 21.1714C28.1018 21.0213 28.3481 20.8974 28.5386 20.8856C29.5574 20.8236 29.6019 20.8778 29.6019 21.8799C29.6019 23.0432 29.6019 24.2065 29.6019 25.3698C29.6019 25.4866 29.6019 25.6033 29.6019 25.7377L29.6005 25.7397ZM27.979 25.7456V23.8933C27.5171 24.5399 27.0969 25.1264 26.6549 25.7456H27.979Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M21.1558 27.3715C21.7339 27.3715 22.249 27.3715 22.7634 27.3715C23.3554 27.3715 23.6515 27.661 23.6515 28.2399C23.6515 28.8388 23.5526 28.9374 22.9426 28.9374C21.6271 28.9374 20.3109 28.9374 18.9953 28.9374C18.9177 28.9374 18.8287 28.9609 18.7657 28.9315C18.607 28.8584 18.394 28.7932 18.3283 28.6633C18.2725 28.5531 18.3469 28.3234 18.4404 28.204C18.9854 27.5079 19.5569 26.832 20.1111 26.143C20.6646 25.4547 21.2394 24.7794 21.7445 24.0578C21.9715 23.7329 22.1043 23.3193 22.1846 22.9272C22.2609 22.5546 21.9968 22.2885 21.6065 22.2467C21.0396 22.186 20.5571 22.3413 20.2445 22.843C20.0713 23.121 19.8482 23.1588 19.5688 23.0218C19.3717 22.9252 19.1679 22.8398 18.9761 22.7334C18.7524 22.6095 18.6708 22.4216 18.7949 22.1847C19.6876 20.478 22.0678 20.2007 23.1995 21.3685C23.836 22.0255 23.9083 22.8084 23.6893 23.6396C23.4596 24.51 22.9233 25.212 22.3592 25.8964C21.9715 26.3661 21.5906 26.8405 21.1571 27.3728L21.1558 27.3715Z"
+                                    fill="#69A71A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_7550_133">
+                                    <rect width="34" height="30" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
                     </div>
                     <h1 class="font-bold text-lg text-blue-900">24/7 Availability</h1>
@@ -398,7 +561,25 @@
                         being there for your clients around the clock.</p>
                 </div>
                 <div>
-                    <div class="flex h-16 w-16 my-4 bg-gray-200 rounded-full">
+                    <div class="flex h-16 w-16 my-4 bg-gray-200 rounded-full justify-center items-center">
+                        <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7550_140)">
+                                <path
+                                    d="M14.5397 0.00178968C18.2871 0.00178968 22.0328 -0.00186262 25.7803 0.00178968C28.0485 0.00544198 28.9947 0.973302 28.9964 3.30347C29.0017 11.0865 28.9999 18.8696 28.9964 26.6526C28.9964 28.9974 28.052 29.9762 25.8032 29.9817C22.8166 29.989 19.8316 29.9854 16.845 29.9817C16.582 29.9817 16.2589 30.0438 16.0736 29.9123C15.7947 29.7133 15.4434 29.3718 15.4381 29.0851C15.4346 28.8002 15.7718 28.4331 16.0506 28.245C16.2642 28.1026 16.6173 28.1665 16.9085 28.1665C19.8652 28.1629 22.8218 28.1665 25.7785 28.1629C27.0583 28.161 27.2383 27.9729 27.2383 26.6216C27.2401 18.8696 27.2401 11.1157 27.2383 3.36373C27.2383 2.01238 27.0583 1.82246 25.7785 1.82246C18.2553 1.82064 10.7322 1.81881 3.20903 1.82246C1.96811 1.82246 1.77747 2.02151 1.77571 3.29982C1.77041 6.35862 1.77571 9.41742 1.77218 12.4762C1.77218 12.7483 1.84808 13.0825 1.72452 13.2779C1.52505 13.5938 1.19497 14.0157 0.910775 14.0211C0.630113 14.0285 0.2912 13.6139 0.0687883 13.3126C-0.047713 13.1556 0.0158332 12.8451 0.0158332 12.6022C0.014068 9.51238 0.00877249 6.42436 0.0158332 3.33451C0.0228939 0.991563 0.961965 0.00909428 3.21079 0.00361583C6.9865 -0.00551492 10.764 0.00178968 14.5397 0.00178968Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M7.33631 14.9944C8.76963 14.9944 10.2012 14.9871 11.6345 14.9944C13.412 15.0054 14.4958 16.0974 14.5047 17.9126C14.517 20.9677 14.517 24.0229 14.5047 27.0762C14.4976 28.8111 13.465 29.9488 11.7934 29.9688C8.78198 30.0072 5.7706 30.0072 2.75922 29.9688C1.05936 29.9469 0.0426184 28.8713 0.0267318 27.1036C-0.00151092 24.0192 -0.00327609 20.933 0.0267318 17.8487C0.0443835 16.0572 1.12114 15.0072 2.86336 14.9944C4.35493 14.9834 5.84474 14.9926 7.33631 14.9926V14.9944ZM7.3063 28.1646C8.71138 28.1646 10.1165 28.1756 11.5198 28.161C12.4924 28.15 12.7448 27.8998 12.7483 26.9393C12.7571 23.9718 12.7571 21.0061 12.7483 18.0386C12.7466 17.0981 12.4606 16.8151 11.5268 16.8133C8.68843 16.8059 5.85003 16.8059 3.01164 16.8133C2.04079 16.8151 1.78661 17.0525 1.78308 18.0295C1.76896 20.997 1.76896 23.9626 1.78308 26.9301C1.78661 27.9144 2.0302 28.15 3.00634 28.161C4.43966 28.1756 5.87475 28.1646 7.30806 28.1646H7.3063Z"
+                                    fill="#69A71A" />
+                                <path
+                                    d="M22.3841 5.50029C21.8052 5.4729 21.378 5.56421 21.0673 5.40898C20.7337 5.24098 20.2942 4.84105 20.2959 4.54339C20.2959 4.24573 20.7672 3.71614 21.062 3.6924C22.2535 3.59562 23.4574 3.63031 24.6541 3.66318C25.2225 3.67962 25.4679 4.09781 25.4732 4.64748C25.4855 5.79613 25.4855 6.9466 25.4732 8.09708C25.4661 8.65405 25.1996 9.04302 24.633 9.05581C24.0169 9.07042 23.7521 8.66501 23.7327 8.06786C23.7221 7.72454 23.731 7.38123 23.731 6.80782C23.3144 7.20592 23.0778 7.41592 22.859 7.64237C20.7478 9.82279 18.6384 12.005 16.5291 14.1873C16.3843 14.337 16.2413 14.4886 16.0931 14.6347C15.68 15.0383 15.2228 15.1807 14.778 14.7315C14.3367 14.2859 14.4373 13.8056 14.831 13.371C15.0516 13.1281 15.2829 12.898 15.5106 12.6625C17.537 10.566 19.5652 8.46961 21.5898 6.37137C21.8122 6.14127 22.0205 5.89839 22.3824 5.50029H22.3841Z"
+                                    fill="#69A71A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_7550_140">
+                                    <rect width="29" height="30" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
 
                     </div>
                     <h1 class="font-bold text-lg text-blue-900">Scalability and Flexibility</h1>
@@ -413,6 +594,119 @@
             </div>
 
         </div>
+
+        <div class="mx-auto p-24  container">
+            <h1 class="text-blue-800 mb-20 text-center text-5xl font-bold">Product Pricing & Packaging</h1>
+
+            <div class="grid grid-cols-1 gap-8">
+                <!-- Head -->
+                <div class="grid grid-cols-5 rounded-3xl bg-[#0D80BA] shadow-xl py-5 gap-8">
+                    <h1 class=" font-semibold flex items-center justify-center text-white ">Component</h1>
+                    <h1 class="font-semibold flex items-center  text-white text-left col-span-2">Description</h1>
+                    <h1 class="font-semibold flex items-center  text-white text-left">Monthly Cost<br /> (Kenya)</h1>
+                    <h1 class="font-semibold flex items-center  text-white text-left">Monthly Cost<br /> (International)
+                    </h1>
+                </div>
+
+                <!-- Items  -->
+
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5  min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Agent (FTE)</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Salary, benefits,
+                        and
+                        for one full-time agent</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$360</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$3 per hour</h1>
+                </div>
+                <!-- 2 -->
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5 min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Supervisor</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Salary, and
+                        benefits
+                        for one supervisor</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$545</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$3.7 per hour</h1>
+                </div>
+                <!-- 3 -->
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5 min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Workstation<br /> Costs
+                    </h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Hardware (computer,
+                        headset, etc.) and infrastructure costs per agent</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$117</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$117</h1>
+                </div>
+                <!-- 4 -->
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5 min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Software License<br />
+                        Costs
+                    </h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Call management
+                        software licenses per agent</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$70</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$70</h1>
+                </div>
+                <!-- 5 -->
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5 min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Compliance and
+                        <br />Security
+                    </h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Data protection and
+                        security measures per agent</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$0</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$0</h1>
+                </div>
+                <!-- 6 -->
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5 min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Management
+                        <br />Overheads
+                    </h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Prorated costs for
+                        supervisors, team leads, QA tools and processes, and administrative support</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$54</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$54</h1>
+                </div>
+                <!-- 7 -->
+                <div class="grid grid-cols-5 rounded-3xl border border-[#0D80BA] shadow-xl py-5 min-h-20 gap-8">
+                    <h1 class="text-gray-600 flex items-center justify-center  ">Operational Costs</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left col-span-2">Prorated utilities,
+                        facilities, internet connectivity, and other miscellaneous costs per agent</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$108</h1>
+                    <h1 class="text-gray-600 flex items-center   text-left">$108</h1>
+                </div>
+                <!-- Total -->
+                <div class="grid grid-cols-5 rounded-3xl bg-total-grad shadow-xl py-4 gap-8">
+                    <h1 class=" font-semibold text-xl flex items-center justify-center text-white ">Total</h1>
+                    <h1 class="font-semibold flex items-center  text-white text-left col-span-2"></h1>
+                    <h1 class="font-bold flex items-center text-xl text-white text-left">1254</h1>
+
+                    <button class="bg-white font-semibold text-[#0D80BA] w-5/6 rounded-xl h-full py-4">
+                        Contact Us
+                    </button>
+
+                    </h1>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="mx-auto p-24  container">
+            <div class="bg-setup-grad p-20 px-56 rounded-3xl text-white text-center relative">
+                <h1 class=" text-4xl font-semibold pb-10 ">Setup Fees and integration costs are not part of the costs
+                    mentioned</h1>
+                <p class="pb-16 font-light">The above listed is our Basic Package all other services will be offered on
+                    an
+                    as-needed basis in consultation with the
+                    company.</p>
+                <button class="bg-white font-semibold text-[#0D80BA] w-1/5 rounded-xl h-full py-4">
+                    Contact Us
+                </button>
+                <img class="absolute top-0 w-[calc(12%)] -left-28" src="../images/kindalooksafrican.png" alt=""
+                    srcset="">
+            </div>
+        </div>
+
         <div class="mx-auto px-24  container">
             <div class="px-40 my-14">
                 <h1 class="text-blue-900 font-bold text-xl text-center">Ready To Get Started?</h1>
@@ -634,7 +928,7 @@
 
             <div class="grid grid-cols-4 my-10">
                 <div>
-                    <img class="h-24 w-auto" src="./images/logo.png" alt="" srcset="">
+                    <img class="h-24 w-auto" src="../images/logo.png" alt="" srcset="">
                     <p class="text-gray-500 font-normal py-12">
                         We are well known for being the best communication and
                         collaboration provider.
@@ -663,7 +957,7 @@
                 <div>
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Connect With Us</h1>
                     <a href="">
-                        <img class="h-10" src="./images/socials.png" alt="" srcset="">
+                        <img class="h-10" src="../images/socials.png" alt="" srcset="">
                     </a>
                 </div>
 
@@ -812,9 +1106,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/flowbite.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
