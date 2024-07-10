@@ -110,7 +110,7 @@ $(document).ready(function () {
 
     $('#select-contactcenter').on('click', function () {
         hideAll(1);
-        $('select-contactcenter').addClass('sect-selected');
+        $('#select-contactcenter').addClass('sect-selected');
     })
     $('#select-erp').on('click', function () {
         hideAll(2);
