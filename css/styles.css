@@ -84,3 +84,25 @@ body {
     background: linear-gradient(195deg, rgba(13, 128, 186, 1) 0%, rgba(138, 196, 64, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d80ba", endColorstr="#8ac440", GradientType=1);
 }
+
+
+/* Rectangle 656 */
+
+.bg-enteprise {
+    background: linear-gradient(241.33deg, #0D80BA -11.33%, #69A71A 67.68%);
+    border-radius: 14px 14px 0px 0px;
+}
+
+.bg-other {
+    background: linear-gradient(241.33deg, #8AC440 -11.33%, #0D80BA 22.29%);
+    border-radius: 14px 14px 0px 0px;
+
+
+}
+
+.bg-other-cirlce {
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 22.4%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.22;
+    border-radius: 12061.8px;
+    transform: rotate(-87.92deg);
+}

@@ -2,38 +2,38 @@ $(document).ready(function () {
 
     $('.faqs').fadeOut();
     const hidefaqs = () => {
-        $('#faq01').fadeOut(500);
-        $('#faq02').fadeOut(500);
-        $('#faq03').fadeOut(500);
-        $('#faq04').fadeOut(500);
-        $('#faq05').fadeOut(500);
-        $('#faq06').fadeOut(500);
+        $('#faq01').fadeOut(100);
+        $('#faq02').fadeOut(100);
+        $('#faq03').fadeOut(100);
+        $('#faq04').fadeOut(100);
+        $('#faq05').fadeOut(100);
+        $('#faq06').fadeOut(100);
     }
 
     hidefaqs();
-    $('#faq01').fadeIn(500);
-    $('.faq').on('click', function () {
+    $('#faq01').fadeIn(100);
+    $('.faq').on('mouseenter', function () {
         var id = $('this').attr('id');
         $(id).addClass('bg-blue-50 border-blue-700');
         hidefaqs();
         switch (id) {
             case 'faq-1':
-                $('#faq01').fadeIn(500);
+                $('#faq01').fadeIn(100);
                 break;
             case 'faq-2':
-                $('#faq02').fadeIn(500);
+                $('#faq02').fadeIn(100);
                 break;
             case 'faq-3':
-                $('#faq03').fadeIn(500);
+                $('#faq03').fadeIn(100);
                 break;
             case 'faq-4':
-                $('#faq04').fadeIn(500);
+                $('#faq04').fadeIn(100);
                 break;
             case 'faq-5':
-                $('#faq05').fadeIn(500);
+                $('#faq05').fadeIn(100);
                 break;
             default:
-                $('#faq01').fadeIn(500);
+                $('#faq01').fadeIn(100);
                 break;
         }
 
@@ -56,7 +56,7 @@ const hideAll = (except) => {
     $('#zoho').fadeOut(0);
 
     $('#select-outsourced').removeClass('sect-selected');
-    $('select-contactcenter').removeClass('sect-selected');
+    $('#select-contactcenter').removeClass('sect-selected');
     $('#select-erp').removeClass('sect-selected'); 
     $('#select-calling').removeClass('sect-selected');
     $('#select-itaas').removeClass('sect-selected'); 
@@ -74,26 +74,27 @@ const hideAll = (except) => {
 
 
     if (except === 0) {
-        $('#outsourced').fadeIn(500);
+        $('#outsourced').fadeIn(100);
     } else if (except === 1) {
-        $('#contactcenter').fadeIn(500);
+        $('#contactcenter').fadeIn(100);
 
     } else if (except === 2) {
-        $('#erp').fadeIn(500);
+        $('#erp').fadeIn(100);
     } else if (except === 3) {
-        $('#calling').fadeIn(500);
+        $('#calling').fadeIn(100);
     } else if (except === 4) {
-        $('#itaas').fadeIn(500);
+        $('#itaas').fadeIn(100);
     } else if (except === 5) {
-        $('#web').fadeIn(500);
+        $('#web').fadeIn(100);
     } else if (except === 6) {
-        $('#pbx').fadeIn(500);
+        $('#pbx').fadeIn(100);
     } else if (except === 7) {
-        $('#crm').fadeIn(500);
+        $('#crm').fadeIn(100);
     } else if (except === 8) {
-        $('#zoho').fadeIn(500);
+        $('#zoho').fadeIn(100);
     } else {
-        $('#outsourced').fadeIn(500);
+        $('#outsourced').fadeIn(100);
+         $('#select-outsourced').addClass('sect-selected');
     }
 }
 
@@ -103,41 +104,41 @@ $(document).ready(function () {
     // jumps to the 3rd position (position starts from 0)
     hideAll();
 
-    $('#select-outsourced').on('click', function () {
+    $('#select-outsourced').on('mouseenter', function () {
         hideAll(0);
         $('#select-outsourced').addClass('sect-selected');
     })
 
-    $('#select-contactcenter').on('click', function () {
+    $('#select-contactcenter').on('mouseenter', function () {
         hideAll(1);
         $('#select-contactcenter').addClass('sect-selected');
     })
-    $('#select-erp').on('click', function () {
+    $('#select-erp').on('mouseenter', function () {
         hideAll(2);
         $('#select-erp').addClass('sect-selected');
     })
-    $('#select-calling').on('click', function () {
+    $('#select-calling').on('mouseenter', function () {
         hideAll(3);
         $('#select-calling').addClass('sect-selected');
     })
-    $('#select-itaas').on('click', function () {
+    $('#select-itaas').on('mouseenter', function () {
         hideAll(4);
         $('#select-itaas').addClass('sect-selected');
     })
 
-    $('#select-web').on('click', function () {
+    $('#select-web').on('mouseenter', function () {
         hideAll(5);
         $('#select-web').addClass('sect-selected');
     })
-    $('#select-pbx').on('click', function () {
+    $('#select-pbx').on('mouseenter', function () {
         hideAll(6);
         $(this).addClass('sect-selected');
     })
-    $('#select-crm').on('click', function () {
+    $('#select-crm').on('mouseenter', function () {
         hideAll(7);
-        $('#select-pbx').addClass('sect-selected');
+        $('#select-crm').addClass('sect-selected');
     })
-    $('#select-zoho').on('click', function () {
+    $('#select-zoho').on('mouseenter', function () {
         hideAll(8);
         $('#select-zoho').addClass('sect-selected');
     })
