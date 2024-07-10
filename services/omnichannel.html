@@ -17,215 +17,154 @@
 <body>
     <div class="bg-white">
         <header class="absolute inset-x-0 top-0 z-50 ">
-            <nav id="nav"
-                class="flex lg:gap-12 items-center justify-between w-full z-50 top-0 start-0 py-2 lg:px-0 container mx-auto"
-                aria-label="Global">
-                <!-- <div class="flex lg:flex-1"> -->
-                <div class="flex ">
-                    <a href="/index.html" class="-m-1.5 p-1.5">
-                        <span class="sr-only">talkcoms</span>
-                        <img class="h-24 w-auto" src="../images/logo.png" alt="">
+            <nav class="">
+                <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="../images/logo.svg" class="md:h-24 h-14" alt="Flowbite Logo" />
                     </a>
-                </div>
-                <div class="flex lg:hidden">
-                    <button type="button"
-                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                        aria-controls="navbar-dropdown" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
                         </svg>
                     </button>
-                </div>
-                <div class="hidden lg:flex lg:gap-x-8">
-                    <a href="/index.html" class="text-lg font-semibold leading-6 nav-link uppercase">Home</a>
-                    <button data-dropdown-toggle="dropdownNavbar"
-                        class="text-lg font-semibold leading-6 nav-link uppercase"
-                        data-dropdown-placement="bottom-start">Products
-                    </button>
-                    <div id="dropdownNavbar"
-                        class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow max-w-2xl">
-                        <div class="border-b p-6">
-                            <h1 class="text-gray-200 text-4xl font-normal">Products</h1>
-                        </div>
-
-
-                        <ul class="grid grid-cols-2 gap-y-4 py-2 pb-10 text-sm text-gray-700  "
-                            aria-labelledby="dropdownLargeButton">
-                            <li>
-                                <a href="./outsourced.html"
-                                    class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Omnichannel Contact
-                                    Center</a>
-
-                                <p class="px-4">Seamless and personalized customer experiences across all communication
-                                    channels</p>
-                            </li>
-                            <li>
-                                <a href="./businessphonesystems.html"
-                                    class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Business Phone
-                                    Systems (PBX)</a>
-
-                                <p class="px-4">Enhance productivity with call management features like call forwarding,
-                                    voicemail, and integration with mobile devices.</p>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Enterprise Resource
-                                    Planning System</a>
-
-                                <p class="px-4">From inventory and finance to sales and customer relationship
-                                    management,</p>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Customer Management
-                                    Relationship System (CRM)</a>
-
-                                <p class="px-4">A solution that centralizes customer data, automates sales processes,
-                                    and improves customer satisfaction.</p>
-                            </li>
-                            <!-- <li aria-labelledby="dropdownNavbarLink">
-                                <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
-                                    data-dropdown-placement="right-start" type="button"
-                                    class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100">Dropdown<svg
-                                        class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                        fill="none" viewBox="0 0 10 6">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2" d="m1 1 4 4 4-4" />
-                                    </svg></button>
-                                <div id="doubleDropdown"
-                                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
-                                    <ul class="py-2 text-sm text-gray-700 " aria-labelledby="doubleDropdownButton">
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Overview</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">My
-                                                downloads</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Billing</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">Rewards</a>
-                                        </li>
-                                    </ul>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                        <ul
+                            class="flex flex-col font-medium p-4 md:p-0 mt-4 border gap-4  rounded-lg bg-transparent md:gap-0 md:space-x-8 rtl:space-x-reverse md:flex-row md:items-center md:mt-0 md:border-0 bg-white shadow-lg md:shadow-none md:bg-transparent">
+                            <a href="#" class="text-lg font-semibold leading-6 nav-link md:uppercase">Home</a>
+                            <button data-dropdown-toggle="dropdownNavbar"
+                                class="text-lg font-semibold text-left md:text-center nav-link md:uppercase"
+                                data-dropdown-placement="bottom-start">Products
+                            </button>
+                            <div id="dropdownNavbar"
+                                class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow max-w-2xl">
+                                <div class="border-b p-6">
+                                    <h1 class="text-gray-200 text-4xl font-normal">Products</h1>
                                 </div>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Earnings</a>
-                            </li> 
-                            -->
+
+
+                                <ul class="grid grid-cols-2 gap-y-4 py-2 pb-10 text-sm text-gray-700  "
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li>
+                                        <a href="/products/outsourced.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Omnichannel
+                                            Contact
+                                            Center</a>
+
+                                        <p class="px-4">Seamless and personalized customer experiences across all
+                                            communication
+                                            channels</p>
+                                    </li>
+                                    <li>
+                                        <a href="/products/businessphonesystems.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Business Phone
+                                            Systems (PBX)</a>
+
+                                        <p class="px-4">Enhance productivity with call management features like call
+                                            forwarding,
+                                            voicemail, and integration with mobile devices.</p>
+                                    </li>
+                                    <li>
+                                        <a href="/products/erp.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Enterprise Resource
+                                            Planning System</a>
+
+                                        <p class="px-4">From inventory and finance to sales and customer relationship
+                                            management,</p>
+                                    </li>
+                                    <li>
+                                        <a href="/products/CustomerManagemenyRelationship.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Customer Management
+                                            Relationship System (CRM)</a>
+
+                                        <p class="px-4">A solution that centralizes customer data, automates sales
+                                            processes,
+                                            and improves customer satisfaction.</p>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                            <button data-dropdown-toggle="servicesDropDown"
+                                class="text-lg font-semibold text-left md:text-center leading-6 nav-link md:uppercase"
+                                data-dropdown-placement="bottom-start">Services
+                            </button>
+                            <div id="servicesDropDown"
+                                class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow max-w-sm">
+                                <div class="border-b p-6">
+                                    <h1 class="text-gray-200 text-4xl font-normal">Services</h1>
+                                </div>
+
+
+                                <ul class="grid gap-y-4 py-2 pb-10 text-sm text-gray-700  "
+                                    aria-labelledby="dropdownLargeButton">
+                                    <li class="">
+                                        <a href="/services/omnichannel.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Contact Center
+                                            &
+                                            Business Process Outsourcing</a>
+
+                                        <p class="px-4 text-sm text-gray-900">Customer Service and Optimize Operations
+                                            with
+                                            Our
+                                            Comprehensive
+                                            Contact
+                                            Center and BPO Services Handled by Expert Staff</p>
+                                    </li>
+                                    <li>
+                                        <a href="/services/addwebdev.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Web
+                                            & App
+                                            Development</a>
+
+                                        <p class="px-4">High-Performance Websites Tailored to Your Business Needs.</p>
+                                    </li>
+                                    <li>
+                                        <a href="/services/ITaas.html"
+                                            class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">ITaas</a>
+
+                                        <p class="px-4">
+                                            End-to-End IT Management Solutions that Enhance Efficiency, Minimize
+                                            Downtime,
+                                            and
+                                            Protect Your Digital Assets.
+                                        </p>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+
+
+
+                            <a href="/integration/zoho.html"
+                                class="text-lg font-semibold leading-6 nav-link md:uppercase">Integrations</a>
+                            <a href="#" class="text-lg font-semibold leading-6 nav-link md:uppercase">Blogs</a>
+                            <a href="#" class="text-lg font-semibold leading-6 nav-link md:uppercase">Resource
+                                Center</a>
+                            <a href="#" class="text-lg font-semibold leading-6 nav-link d md:uppercase">About Us</a>
+
                         </ul>
-                        <!-- <div class="py-1">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ">Sign
-                                out</a>
-                        </div> -->
                     </div>
-
-
-                    <!-- Services -->
-
-                    <button data-dropdown-toggle="servicesDropDown"
-                        class="text-lg font-semibold leading-6 nav-link uppercase"
-                        data-dropdown-placement="bottom-start">Services
-                    </button>
-                    <div id="servicesDropDown"
-                        class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow max-w-sm">
-                        <div class="border-b p-6">
-                            <h1 class="text-gray-200 text-4xl font-normal">Services</h1>
-                        </div>
-
-
-                        <ul class="grid gap-y-4 py-2 pb-10 text-sm text-gray-700  "
-                            aria-labelledby="dropdownLargeButton">
-                            <li class="">
-                                <a href="#" class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Contact Center &
-                                    Business Process Outsourcing</a>
-
-                                <p class="px-4 text-sm text-gray-900">Customer Service and Optimize Operations with Our
-                                    Comprehensive
-                                    Contact
-                                    Center and BPO Services Handled by Expert Staff</p>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">Web & App
-                                    Development</a>
-
-                                <p class="px-4">High-Performance Websites Tailored to Your Business Needs.</p>
-                            </li>
-                            <li>
-                                <a href="#" class="block px-4 py-2 text-blue-400 hover:bg-gray-100 ">ITaas</a>
-
-                                <p class="px-4">
-                                    End-to-End IT Management Solutions that Enhance Efficiency, Minimize Downtime, and
-                                    Protect Your Digital Assets.
-                                </p>
-                            </li>
-
-                        </ul>
-                    </div>
-
-
-
-
-
-                    <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Integrations</a>
-                    <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Blogs</a>
-                    <a href="#" class="text-lg font-semibold leading-6 nav-link uppercase">Resource Center</a>
-                    <a href="#" class="text-lg font-semibold leading-6 nav-link d uppercase">About Us</a>
-                </div>
-                <div class="hidden lg:flex lg:flex-1 max-w-96 gap-x-4">
-                    <a href="#"
-                        class="text-md bg-talkgreen text-white p-4 h-full rounded w-full font-semibold justify-center items-center flex leading-6">
-                        BOOK A DEMO
-                    </a>
-                    <a href="#"
-                        class="text-md border-2 rounded w-full px-4  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
-                        Started
-                    </a>
-                </div>
-            </nav>
-            <!-- Mobile menu, show/hide based on menu open state. -->
-            <div class="lg:hidden" role="dialog" aria-modal="true">
-                <!-- Background backdrop, show/hide based on slide-over state. -->
-                <div class="fixed inset-0 z-50"></div>
-                <div
-                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-                    <div class="flex items-center justify-between">
-                        <a href="#" class="-m-1.5 p-1.5">
-                            <span class="sr-only">Your Company</span>
-                            <img class="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                    <div class="hidden lg:flex lg:flex-1 max-w-96 gap-x-4">
+                        <a href="#"
+                            class="text-md bg-talkgreen text-white p-4 h-full rounded w-full font-semibold justify-center items-center flex leading-6">
+                            BOOK A DEMO
                         </a>
-                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                            <span class="sr-only">Close menu</span>
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                        <a href="#"
+                            class="text-md border-2 rounded w-full px-4  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                            Started
+                        </a>
                     </div>
-                    <div class="mt-6 flow-root">
-                        <div class="-my-6 divide-y divide-gray-500/10">
-                            <div class="space-y-2 py-6">
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
-                            </div>
-                            <div class="py-6">
-                                <a href="#"
-                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                                    in</a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-            </div>
+
+            </nav>
         </header>
         <div class="relative isolate px-6 pt-14 lg:px-8 ">
 
@@ -420,9 +359,10 @@
                         <div class="hidden duration-200 ease-linear" data-carousel-item>
                             <div class="flex gap-8">
                                 <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
-            <div class="relative rounded-2xl w-full">
-                <img class="w-full" src="../images/omnichannel/Rectangle 1536.png" alt="" srcset="">
-            </div>
+                                    <div class="relative rounded-2xl w-full">
+                                        <img class="w-full" src="../images/omnichannel/Rectangle 1536.png" alt=""
+                                            srcset="">
+                                    </div>
                                     <div class="text-center my-6">
 
                                         <h1 class=" text-blue-950 font-bold text-3xl my-2 px-10">Predictive Dialer
