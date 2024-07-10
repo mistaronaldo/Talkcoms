@@ -69,3 +69,16 @@ body {
     background: rgb(138, 196, 64);
     background: linear-gradient(195deg, rgba(138, 196, 64, 0.20772058823529416) 0%, rgba(13, 128, 186, 1) 85%);
 }
+
+.bg-plan {
+    background: rgb(138, 196, 64);
+    background: linear-gradient(195deg, rgba(138, 196, 64, 1) 0%, rgba(13, 128, 186, 1) 43%);
+}
+
+.bg-ultraplan {
+    background: rgb(13, 128, 186);
+    background: -moz-linear-gradient(195deg, rgba(13, 128, 186, 1) 0%, rgba(138, 196, 64, 1) 100%);
+    background: -webkit-linear-gradient(195deg, rgba(13, 128, 186, 1) 0%, rgba(138, 196, 64, 1) 100%);
+    background: linear-gradient(195deg, rgba(13, 128, 186, 1) 0%, rgba(138, 196, 64, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d80ba", endColorstr="#8ac440", GradientType=1);
+}
