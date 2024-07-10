@@ -254,7 +254,7 @@
             <div class="absolute inset-l-0 rounded-full -z-10 transform-gpu overflow-hidden blur-3xl "
                 aria-hidden="true">
                 <div
-                    class="relative left-[calc(50%)] aspect-[125/78] w-[90.125rem] -translate-x-1/2 rotate-[57deg] bg-gradient-to-tr from-[#0d80ba34] to-[#0d80ba34] opacity-20 ">
+                    class="relative left-[calc(50%)] aspect-[125/78] w-[90.125rem] -translate-x-1/2 rotate-[57deg] bg-gradient-to-tr -z-30 from-[#0d80ba34] to-[#0d80ba34] opacity-20 ">
                 </div>
             </div>
 
@@ -262,10 +262,10 @@
 
         <div class="mx-auto p-24  container">
 
-            <div class="px-40">
+            <div class="px-40 z-30 relative">
 
                 <div class="grid grid-cols-9 lg:gap-6 text-center text-sm text-gray-400">
-                    <div class="hover:text-blue-700 cursor-pointer sect-selected">
+                    <div id="select-outsourced" class="hover:text-blue-700 cursor-pointer sect-selected">
                         <div
                             class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="32" height="26" viewBox="0 0 32 26" fill="none"
@@ -288,8 +288,9 @@
                         </div>
                         <h1 class="my-4">Outsourced CC</h1>
                     </div>
-                    <div class="">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-contactcenter" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="32" height="26" viewBox="0 0 32 26" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1784)">
@@ -310,8 +311,9 @@
                         </div>
                         <h1 class="my-4">Contact Center</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-erp" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="32" height="23" viewBox="0 0 32 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1790)">
@@ -335,8 +337,9 @@
                         </div>
                         <h1 class="my-4">ERP</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-calling" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="32" height="30" viewBox="0 0 32 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1797)">
@@ -357,8 +360,9 @@
                         </div>
                         <h1 class="my-4">Calling App</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-itaas" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="34" height="24" viewBox="0 0 34 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1780)">
@@ -381,8 +385,9 @@
                         </div>
                         <h1 class="my-4">ITaas</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-web" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="34" height="22" viewBox="0 0 34 22" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1776)">
@@ -404,8 +409,9 @@
                         </div>
                         <h1 class="my-4">Web Development</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-pbx" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1794)">
@@ -426,8 +432,9 @@
                         </div>
                         <h1 class="my-4">PBX</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-crm" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="29" height="34" viewBox="0 0 29 34" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1800)">
@@ -451,8 +458,9 @@
                         </div>
                         <h1 class="my-4">CRM</h1>
                     </div>
-                    <div class="hover:text-blue-700 cursor-pointer">
-                        <div class="rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
+                    <div id="select-zoho" class="hover:text-blue-700 cursor-pointer">
+                        <div
+                            class="sect rounded-full border h-16 w-16 flex items-center justify-center mx-auto shadow-sm">
                             <svg width="36" height="23" viewBox="0 0 36 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_7424_1804)">
@@ -487,292 +495,457 @@
 
         <div class="mx-auto  container">
 
-            <div id="animation-carousel" class="relative w-full bg-red-50" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                    <!-- Item 1 -->
-                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                        <div class="grid grid-cols-2 ">
-                            <div class="items-center flex">
-                                <div class="">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
-                                            <svg class="w-full" viewBox="0 0 50 40" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_7452_399)">
-                                                    <path opacity="0.8"
-                                                        d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
-                                                        fill="#8AC440" />
-                                                    <path opacity="0.8"
-                                                        d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
-                                                        fill="#0D80BA" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_7452_399">
-                                                        <rect width="50" height="40" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
+            <div>
+                <div id="outsourced" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg class="w-full" viewBox="0 0 50 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7452_399)">
+                                            <path opacity="0.8"
+                                                d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
+                                                fill="#8AC440" />
+                                            <path opacity="0.8"
+                                                d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
+                                                fill="#0D80BA" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7452_399">
+                                                <rect width="50" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
 
-                                        </div>
-                                        <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
-                                    </div>
-                                    <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
-                                        with Talkcoms
-                                        Outsourced Contact Center Services
-                                    </h6>
-                                    <p class="leading-7 text-sm text-gray-500 min-h-36">
-                                        With 24/7 availability, Talkcoms ensures your customers receive support
-                                        whenever needed.
-                                        We
-                                        understand the importance of
-                                        being there for your clients around the clock.
-                                    </p>
-                                    <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
-                                        <a href="#"
-                                            class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
-                                            BOOK A DEMO
-                                        </a>
-                                        <a href="#"
-                                            class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
-                                            Started
-                                        </a>
-                                    </div>
                                 </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
                             </div>
-                            <div class="h-auto ">
-                                <img class="w-2/5 absolute right-0" src="./images/girlsonpc.png" alt="" srcset="">
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
+                                with Talkcoms
+                                Outsourced Contact Center Services
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                                With 24/7 availability, Talkcoms ensures your customers receive support
+                                whenever needed.
+                                We
+                                understand the importance of
+                                being there for your clients around the clock.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                        <div class="grid grid-cols-2 ">
-                            <div class="items-center flex">
-                                <div class="">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
-                                            <svg class="w-full" viewBox="0 0 50 40" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_7452_399)">
-                                                    <path opacity="0.8"
-                                                        d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
-                                                        fill="#8AC440" />
-                                                    <path opacity="0.8"
-                                                        d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
-                                                        fill="#0D80BA" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_7452_399">
-                                                        <rect width="50" height="40" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-
-                                        </div>
-                                        <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
-                                    </div>
-                                    <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
-                                        with Talkcoms
-                                        Outsourced Contact Center Services
-                                    </h6>
-                                    <p class="leading-7 text-sm text-gray-500 min-h-36">
-                                        With 24/7 availability, Talkcoms ensures your customers receive support
-                                        whenever needed.
-                                        We
-                                        understand the importance of
-                                        being there for your clients around the clock.
-                                    </p>
-                                    <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
-                                        <a href="#"
-                                            class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
-                                            BOOK A DEMO
-                                        </a>
-                                        <a href="#"
-                                            class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
-                                            Started
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-auto ">
-                                <img class="w-2/5 absolute right-0" src="./images/girlsonpc.png" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-200 ease-linear" data-carousel-item="active">
-                        <div class="grid grid-cols-2 ">
-                            <div class="items-center flex">
-                                <div class="">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
-                                            <svg class="w-full" viewBox="0 0 50 40" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_7452_399)">
-                                                    <path opacity="0.8"
-                                                        d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
-                                                        fill="#8AC440" />
-                                                    <path opacity="0.8"
-                                                        d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
-                                                        fill="#0D80BA" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_7452_399">
-                                                        <rect width="50" height="40" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-
-                                        </div>
-                                        <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
-                                    </div>
-                                    <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
-                                        with Talkcoms
-                                        Outsourced Contact Center Services
-                                    </h6>
-                                    <p class="leading-7 text-sm text-gray-500 min-h-36">
-                                        With 24/7 availability, Talkcoms ensures your customers receive support
-                                        whenever needed.
-                                        We
-                                        understand the importance of
-                                        being there for your clients around the clock.
-                                    </p>
-                                    <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
-                                        <a href="#"
-                                            class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
-                                            BOOK A DEMO
-                                        </a>
-                                        <a href="#"
-                                            class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
-                                            Started
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-auto ">
-                                <img class="w-2/5 absolute right-0" src="./images/girlsonpc.png" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                        <div class="grid grid-cols-2 ">
-                            <div class="items-center flex">
-                                <div class="">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
-                                            <svg class="w-full" viewBox="0 0 50 40" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_7452_399)">
-                                                    <path opacity="0.8"
-                                                        d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
-                                                        fill="#8AC440" />
-                                                    <path opacity="0.8"
-                                                        d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
-                                                        fill="#0D80BA" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_7452_399">
-                                                        <rect width="50" height="40" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-
-                                        </div>
-                                        <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
-                                    </div>
-                                    <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
-                                        with Talkcoms
-                                        Outsourced Contact Center Services
-                                    </h6>
-                                    <p class="leading-7 text-sm text-gray-500 min-h-36">
-                                        With 24/7 availability, Talkcoms ensures your customers receive support
-                                        whenever needed.
-                                        We
-                                        understand the importance of
-                                        being there for your clients around the clock.
-                                    </p>
-                                    <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
-                                        <a href="#"
-                                            class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
-                                            BOOK A DEMO
-                                        </a>
-                                        <a href="#"
-                                            class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
-                                            Started
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-auto ">
-                                <img class="w-2/5 absolute right-0" src="./images/girlsonpc.png" alt="" srcset="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-200 ease-linear" data-carousel-item>
-                        <div class="grid grid-cols-2 ">
-                            <div class="items-center flex">
-                                <div class="">
-                                    <div class="flex items-center gap-6">
-                                        <div
-                                            class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
-                                            <svg class="w-full" viewBox="0 0 50 40" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_7452_399)">
-                                                    <path opacity="0.8"
-                                                        d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
-                                                        fill="#8AC440" />
-                                                    <path opacity="0.8"
-                                                        d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
-                                                        fill="#0D80BA" />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_7452_399">
-                                                        <rect width="50" height="40" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-
-                                        </div>
-                                        <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
-                                    </div>
-                                    <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
-                                        with Talkcoms
-                                        Outsourced Contact Center Services
-                                    </h6>
-                                    <p class="leading-7 text-sm text-gray-500 min-h-36">
-                                        With 24/7 availability, Talkcoms ensures your customers receive support
-                                        whenever needed.
-                                        We
-                                        understand the importance of
-                                        being there for your clients around the clock.
-                                    </p>
-                                    <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
-                                        <a href="#"
-                                            class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
-                                            BOOK A DEMO
-                                        </a>
-                                        <a href="#"
-                                            class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
-                                            Started
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="h-auto ">
-                                <img class="w-2/5 absolute right-0" src="./images/girlsonpc.png" alt="" srcset="">
-                            </div>
-                        </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/girlsonpc.png" alt="" srcset="">
                     </div>
                 </div>
-                <!-- Slider controls -->
+                <div id="contactcenter" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7552_6074)">
+                                            <path opacity="0.8"
+                                                d="M42.8241 26.5L15.61 53L8.21331 45.7974C-2.73516 35.1295 -2.73516 17.8705 8.21331 7.20256L15.61 0L42.8241 26.5Z"
+                                                fill="#8AC440" />
+                                            <path opacity="0.8"
+                                                d="M22.1763 26.5L49.3904 0L56.7871 7.20256C67.7426 17.8705 67.7426 35.1295 56.7871 45.7974L49.3904 53L22.1763 26.5Z"
+                                                fill="#282964" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7552_6074">
+                                                <rect width="65" height="53" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
 
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Omnichannel Contact Center Solution</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Empower Your Team with Cutting-Edge Technology
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                            Our Business Communication Solutions encompass both reliable Business Phone System options and an advanced Omnichannel
+                            Contact Center Solution. Tailored to meet diverse business needs, these solutions ensure efficient communication and
+                            unified customer engagement across all channels.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="erp" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg class="w-full" viewBox="0 0 50 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7452_399)">
+                                            <path opacity="0.8"
+                                                d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
+                                                fill="#8AC440" />
+                                            <path opacity="0.8"
+                                                d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
+                                                fill="#0D80BA" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7452_399">
+                                                <rect width="50" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold ">Talkcoms ERP System</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">One System, Total Control. Simplify Your Operations with Talkcoms ERP
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                                From inventory and finance to sales and customer relationship management, TalkcomsERP provides a holistic view of your
+                                business, empowering you to make data-driven decisions and propel your company toward sustainable growth.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351-1.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="calling" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg class="w-full" viewBox="0 0 50 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7452_399)">
+                                            <path opacity="0.8"
+                                                d="M32.9421 20L12.0081 40L6.31838 34.5641C-2.10352 26.5128 -2.10352 13.4872 6.31838 5.4359L12.0081 0L32.9421 20Z"
+                                                fill="#8AC440" />
+                                            <path opacity="0.8"
+                                                d="M50.0029 20L29.069 -1.80195e-06L23.3792 5.4359C14.9519 13.4872 14.9519 26.5128 23.3792 34.5641L29.069 40L50.0029 20Z"
+                                                fill="#0D80BA" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7452_399">
+                                                <rect width="50" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Outsourced CC</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Elevate Customer Engagement
+                                with Talkcoms
+                                Outsourced Contact Center Services
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                                With 24/7 availability, Talkcoms ensures your customers receive support
+                                whenever needed.
+                                We
+                                understand the importance of
+                                being there for your clients around the clock.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351-2.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="itaas" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg width="65" height="53" viewBox="0 0 65 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7552_6074)">
+                                            <path opacity="0.8"
+                                                d="M42.8241 26.5L15.61 53L8.21331 45.7974C-2.73516 35.1295 -2.73516 17.8705 8.21331 7.20256L15.61 0L42.8241 26.5Z"
+                                                fill="#8AC440" />
+                                            <path opacity="0.8"
+                                                d="M22.1763 26.5L49.3904 0L56.7871 7.20256C67.7426 17.8705 67.7426 35.1295 56.7871 45.7974L49.3904 53L22.1763 26.5Z"
+                                                fill="#282964" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7552_6074">
+                                                <rect width="65" height="53" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">IT as a Service</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Comprehensive Managed IT Services for Your Business
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                                Ensure Your Business Operates Smoothly with Our Expert Managed IT Services. From Proactive Monitoring and Maintenance to
+                                Security and Support, We Provide End-to-End IT Management Solutions that Enhance Efficiency, Minimize Downtime, and
+                                Protect Your Digital Assets.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351-3.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="web" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg width="64" height="40" viewBox="0 0 64 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7552_8166)">
+                                            <path d="M32.7367 0H41.5135L31.2632 40H22.4865L32.7367 0Z" fill="#8AC440" />
+                                            <path
+                                                d="M21.0771 0.36084H22.4865V9.02249L10.6346 20.2105L22.4865 31.3383V39.9999H21.0771L0 20.2105L21.0771 0.36084Z"
+                                                fill="#0D80BA" />
+                                            <path d="M42.923 40H41.5135V31.2782L53.3654 20.0301L41.5135 8.78195V0H42.923L64 20.0301L42.923 40Z"
+                                                fill="#282964" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7552_8166">
+                                                <rect width="64" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Talkcoms Web Development</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Innovative Web Development Services
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                            Transform Your Online Presence with Custom, High-Performance Websites Tailored to Your Business Needs. From Responsive
+                            Design to Advanced Functionality, Our Expert Team Delivers Cutting-Edge Solutions That Engage and Convert Visitors,
+                            Ensuring Your Digital Success. </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351-4.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="pbx" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                    <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7553_8693)">
+                                            <path
+                                                d="M20.409 20.5264V8.55273H6.67463C3.01642 8.55273 0 11.579 0 15.3948V38.158C0 41.908 2.95224 45.0001 6.67463 45.0001H20.409V33.0264H11.6806V20.5922H20.409V20.5264Z"
+                                                fill="#282964" />
+                                            <path opacity="0.8"
+                                                d="M22.591 24.4737V36.4474H36.3254C39.9836 36.4474 43 33.4211 43 29.6053V6.8421C43 3.09211 40.0477 0 36.3254 0H22.591V11.9737H31.3194V24.4079H22.591V24.4737Z"
+                                                fill="#8AC440" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_7553_8693">
+                                                <rect width="43" height="45" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Business Phone System (PBX)</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Optimize Your Communication with Our Business Phone System (PBX)
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                                Experience reliable and efficient communication with our advanced PBX solutions, featuring VoIP and traditional phone
+                                systems. Enhance productivity with call management features like call forwarding, voicemail, and integration with mobile
+                                devices. Our scalable solutions adapt to your growing business needs, ensuring seamless connectivity and collaboration
+                                for your team
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="crm" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                <svg width="53" height="62" viewBox="0 0 53 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_7553_9219)">
+                                        <path
+                                            d="M4.6375 14.1255C1.70357 19.0552 0 24.838 0 31.0001C0 37.1622 1.70357 42.9451 4.6375 47.8747L21.4839 31.0001L4.6375 14.1255Z"
+                                            fill="#282964" />
+                                        <path
+                                            d="M22.0518 0C18.6447 1.23242 15.4268 2.93884 12.5875 5.11927L38.425 31L12.5875 56.8807C15.4268 59.0612 18.55 60.8624 22.0518 62L53 31L22.0518 0Z"
+                                            fill="#8AC440" />
+                                        <path
+                                            d="M12.5875 5.21387C9.46424 7.6787 6.71959 10.7123 4.63745 14.22L21.4839 31.0946L4.63745 47.9692C6.71959 51.3821 9.46424 54.5105 12.5875 56.9753L38.4249 31.0946L12.5875 5.21387Z"
+                                            fill="#0D80BA" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_7553_9219">
+                                            <rect width="53" height="62" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Talkcoms CRM</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Enhance Customer Relationships with Talkcoms CRM
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                                Empower Your Business with a Comprehensive CRM Solution that Centralizes Customer Data, Automates Sales Processes, and
+                                Improves Customer Satisfaction. Transform Your Customer Interactions and Drive Growth with Our Customizable,
+                                User-Friendly CRM System.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div id="zoho" class="grid grid-cols-2 ">
+                    <div class="items-center flex pl-20">
+                        <div class="">
+                            <div class="flex items-center gap-6">
+                                <div class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center">
+                                <svg width="75" height="48" viewBox="0 0 75 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_7553_9753)">
+                                        <path
+                                            d="M41.6964 30.5608L38.7262 17.1671L37.4583 11.4539L36.8002 8.49132C36.3176 6.30741 35.0497 4.45062 33.2378 3.26652C31.4259 2.08241 29.2805 1.70921 27.2009 2.22063L6.18603 7.3579C1.89092 8.40839 -0.789693 12.9329 0.2106 17.4389L5.10677 39.5084C5.96228 43.3832 9.26149 46.0049 12.8941 46.0049C13.4908 46.0049 14.1006 45.9311 14.7061 45.7837L35.721 40.6418C37.0328 40.3239 38.2173 39.6789 39.1957 38.7712C39.7748 38.2322 40.2793 37.6055 40.6961 36.9006C40.9901 36.403 41.2358 35.8778 41.42 35.3387C41.9509 33.8229 42.0518 32.1734 41.6964 30.5608ZM37.3443 34.7121C36.9055 35.4539 36.2694 36.0252 35.5192 36.3661C35.2954 36.4675 35.0673 36.5458 34.826 36.6057L13.8111 41.743C11.635 42.2729 9.45892 40.8538 8.95 38.5685L4.05822 16.499C3.55368 14.2183 4.90934 11.9284 7.08103 11.3986L28.0959 6.25672C28.4031 6.18301 28.7146 6.14615 29.0217 6.14615C29.7675 6.14615 30.5045 6.3627 31.1539 6.78658C32.0708 7.38554 32.7113 8.32545 32.957 9.43123L34.5101 16.4299L35.7736 22.1431L37.8488 31.5007C37.9629 32.0168 37.9848 32.542 37.9146 33.0488C37.84 33.634 37.647 34.1961 37.3443 34.7121Z"
+                                            fill="#0D80BA" />
+                                        <g opacity="0.8">
+                                            <path
+                                                d="M71.2313 13.2371L52.9102 1.26702C49.1679 -1.17952 44.2278 0.0276247 41.8982 3.95775L37.4583 11.454L34.5101 16.43L30.5001 23.1983C29.3726 25.1058 29.0172 27.3542 29.4998 29.5381C29.9868 31.722 31.2504 33.5788 33.0623 34.7629L35.5191 36.3663L39.1957 38.7713L51.3834 46.7375C52.6952 47.5945 54.1518 48 55.5952 48C58.267 48 60.8818 46.5947 62.3954 44.0422L73.7979 24.8017C76.1275 20.8715 74.9737 15.6836 71.2313 13.2371ZM70.4416 22.6131L59.0436 41.8537C57.8678 43.8395 55.3671 44.4523 53.4718 43.2129L41.42 35.3388L37.9146 33.0489L35.1506 31.2428C34.2337 30.6439 33.5931 29.704 33.3475 28.5982C33.1018 27.4924 33.2817 26.3544 33.852 25.3914L35.7736 22.1432L38.7262 17.1672L45.2501 6.15087C46.4302 4.16047 48.931 3.54769 50.8263 4.78708L69.1474 16.7571C71.0383 17.9965 71.6218 20.6227 70.4416 22.6131Z"
+                                                fill="#8AC440" />
+                                        </g>
+                                        <path
+                                            d="M37.9146 33.0491L35.1506 31.243C34.2337 30.644 33.5931 29.7041 33.3475 28.5983C33.1018 27.4926 33.2817 26.3545 33.852 25.3916L35.7736 22.1434L34.5101 16.4302L30.5001 23.1985C29.3726 25.1059 29.0172 27.3543 29.4998 29.5383C29.9868 31.7222 31.2504 33.579 33.0623 34.7631L35.5191 36.3664L39.1957 38.7715C39.7748 38.2324 40.2793 37.6058 40.6961 36.9009C40.99 36.4033 41.2357 35.8781 41.42 35.339L37.9146 33.0491Z"
+                                            fill="#8AC440" />
+                                        <path
+                                            d="M41.6963 30.5607L38.7261 17.167L35.7735 22.143L37.8487 31.5006C37.9627 32.0167 37.9847 32.5419 37.9145 33.0487C37.8399 33.6339 37.6469 34.196 37.3441 34.712C36.9054 35.4538 36.2693 36.0251 35.519 36.3661L39.1956 38.7711C39.7747 38.2321 40.2792 37.6055 40.696 36.9005C40.9899 36.4029 41.2356 35.8777 41.4199 35.3386C41.9508 33.8228 42.0517 32.1733 41.6963 30.5607Z"
+                                            fill="#0D80BA" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_7553_9753">
+                                            <rect width="75" height="48" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+
+                                </div>
+                                <h1 class="text-4xl text-blue-900 font-bold leading`">Zoho</h1>
+                            </div>
+                            <h6 class="text-lg text-blue-500 leading-8 my-3">Empowering Your Business with Zoho: Work, Finance, and More
+                            </h6>
+                            <p class="leading-7 text-sm text-gray-500 min-h-36">
+                            Welcome to Talkcoms, your dedicated Zoho Partner, bringing you a suite of transformative business solutions. From
+                            collaborative workspaces to streamlined finance management, we are committed to enhancing your business operations with
+                            Zoho's innovative tools.
+                            </p>
+                            <div class="grid grid-cols-2 gap-4 my-10 w-3/4">
+                                <a href="#"
+                                    class="text-md bg-talkgreen  w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-4">
+                                    BOOK A DEMO
+                                </a>
+                                <a href="#"
+                                    class="text-md border-2  rounded  w-full p-3  justify-center items-center flex font-semibold leading-6 border-blue-300 text-blue-300">Get
+                                    Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-auto ">
+                        <img class="w-2/5 absolute right-0" src="./images/slide/Group 351.png" alt="" srcset="">
+                    </div>
+                </div>
             </div>
 
 

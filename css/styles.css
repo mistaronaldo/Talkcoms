@@ -28,8 +28,10 @@ body {
     color: #69A71A;
 }
 
-.sect-selected {
-    color: #0D80BA;
+.sect-selected>div {
+    color: #0D80BA !important;
+    border: none;
+    font-weight: 700;
 }
 
 .blue-greed-gradient {
