@@ -12,6 +12,7 @@
         rel="stylesheet">
     <script src="./js/tailwind.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
 </head>
 
 <body>
@@ -146,8 +147,8 @@
 
                             <a href="/integration/zoho.html"
                                 class="text-lg font-semibold leading-6 nav-link md:uppercase">Integrations</a>
-                            <a href="#" class="text-lg font-semibold leading-6 nav-link md:uppercase">Resource
-                                Center</a>
+                            <!-- <a href="#" class="text-lg font-semibold leading-6 nav-link md:uppercase">Resource
+                                Center</a> -->
                             <a href="/about-us.html"
                                 class="text-lg font-semibold leading-6 nav-link d md:uppercase">About Us</a>
 
@@ -158,7 +159,7 @@
                             class="text-md bg-talkgreen text-white p-4 h-full rounded w-full font-semibold justify-center items-center flex leading-6">
                             BOOK A DEMO
                         </a>
-                        <a href="#"
+                        <a href="/contact-us.html"
                             class="text-md border-2 rounded w-full px-4  justify-center items-center flex font-semibold leading-6 border-blue-300 text-[#0D80BA]">Get
                             Started
                         </a>
@@ -208,7 +209,7 @@
                 </div>
 
                 <img class="absolute w-1/12 left-1/2 top-[calc(30%)]" src="/images/home/dots.png" alt="" srcset="">
-                <img class="absolute w-2/12 top-0 -right-40" src="/images/home/tribal.png" alt="" srcset="">
+                <img class="absolute w-2/12 top-0 -right-20" src="/images/home/tribal.png" alt="" srcset="">
             </div>
             <div class="absolute inset-l-0 rounded-full -z-10 transform-gpu overflow-hidden blur-3xl "
                 aria-hidden="true">
@@ -1099,6 +1100,19 @@
                     <div class="text-white">
                         <div class="flex items-center gap-4">
                             <h1 class="font-bold ">Relevant Resources</h1>
+
+                        </div>
+
+                        <h1 class="font-bold text-3xl pt-8">Find Out Why Remote Work Options Have Been Decreasing
+                            Rapidly
+                            Since 2022
+                        </h1>
+                        <p class="leading-10 text-lg py-4 font-light">
+                            With 24/7 availability, Talkcoms ensures your customers receive support whenever needed. We
+                            understand the importance of
+                            being there for your clients around the clock.
+                        </p>
+                        <div class="flex gap-4">
                             <button class="btn border-none bg-white gap-3 text-lg text-[#69A71A] font-semibold">
                                 <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1112,20 +1126,11 @@
 
                                 Find out more
                             </button>
+                            <button class="font-semibold border rounded-md py-4 px-10">
+                                Get Started
+                            </button>
                         </div>
 
-                        <h1 class="font-bold text-3xl pt-8">Find Out Why Remote Work Options Have Been Decreasing
-                            Rapidly
-                            Since 2022
-                        </h1>
-                        <p class="leading-10 text-lg py-4 font-light">
-                            With 24/7 availability, Talkcoms ensures your customers receive support whenever needed. We
-                            understand the importance of
-                            being there for your clients around the clock.
-                        </p>
-                        <button class="font-semibold border rounded-md py-4 px-10">
-                            Get Started
-                        </button>
                     </div>
                 </div>
 
@@ -1239,16 +1244,18 @@
                 <div class="z-30">
                     <h1 class=" text-white font-bold text-5xl text-center py-6">What our clients say...</h1>
                 </div>
-                <div class="z-50 flex m-auto justify-center">
-                    <div class="-mr-8 mt-16 w-4/12 z-30">
-                        <div class="rounded-2xl  bg-white p-8  text-center h-60">
+                <div>
+
+                    <!-- <div id="keen-slider" class="keen-slider z-50 flex m-auto justify-center bg-black">
+                    <div class="-mr-8 mt-16 w-4/12 z-30 keen-slider__slide">
+                        <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
                             <p class="text-gray-500 mb-12 mt-4">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
                                 tincidunt ut laoreet dolore
                                 magna aliquam erat volutpat.
                             </p>
                             <div
-                                class="w-24 h-24 bg-white rounded-full m-auto -mb-24 left-1/4 flex items-center justify-center border">
+                                class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
                                 <h1 class="text-4xl font-bold text-blue-950">FH</h1>
                             </div>
 
@@ -1256,40 +1263,212 @@
                         <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
                         <h1 class=" text-white text-xl text-center font-regular">Director</h1>
                     </div>
-                    <!-- 85bfdc -->
-                    <div class="w-4/12 z-40">
+                    ]
+                <div class="w-4/12 z-40 keen-slider__slide">
 
-                        <div class="rounded-2xl bg-[#0D80BA] p-8  text-center h-60 ">
-                            <p class="text-white mb-12 mt-4">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore
-                                magna aliquam erat volutpat.
-                            </p>
-                            <div
-                                class="w-24 h-24 bg-white rounded-full m-auto -mb-24 left-1/4 flex items-center justify-center">
-                                <h1 class="text-4xl font-bold text-blue-950">FH</h1>
-                            </div>
+                    <div class="rounded-2xl bg-[#0D80BA] p-8  text-center min-h-80 relative ">
+                        <p class="text-white mb-12 mt-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat.
+                        </p>
+                        <div
+                            class="w-24 h-24 bg-white rounded-full m-auto -mb-24 left-1/4 flex items-center justify-center">
+                            <h1 class="text-4xl font-bold text-blue-950">FH</h1>
                         </div>
-                        <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
-                        <h1 class=" text-white text-xl text-center font-regular">Director</h1>
                     </div>
-                    <div class="w-4/12 -ml-8 mt-16 z-30">
-                        <div class="rounded-2xl bg-white p-8   text-center h-60 ">
-                            <p class="text-gray-500 mb-12 mt-4">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                                tincidunt ut laoreet dolore
-                                magna aliquam erat volutpat.
-                            </p>
-                            <div
-                                class="w-24 h-24 bg-white rounded-full m-auto -mb-24 left-1/4 flex items-center justify-center border">
-                                <h1 class="text-4xl font-bold text-blue-950">FH</h1>
-                            </div>
+                    <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
+                    <h1 class=" text-white text-xl text-center font-regular">Director</h1>
+                </div>
+                <div class="w-4/12 -ml-8 mt-16 z-30 keen-slider__slide">
+                    <div class="rounded-2xl bg-white p-8   text-center min-h-80 relative ">
+                        <p class="text-gray-500 mb-12 mt-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat.
+                        </p>
+                        <div
+                            class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                            <h1 class="text-4xl font-bold text-blue-950">FH</h1>
                         </div>
-                        <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
-                        <h1 class=" text-white text-xl text-center font-regular">Director</h1>
                     </div>
+                    <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
+                    <h1 class=" text-white text-xl text-center font-regular">Director</h1>
+                </div>
+                <div class="w-4/12 -ml-8 mt-16 z-30 keen-slider__slide">
+                    <div class="rounded-2xl bg-white p-8   text-center min-h-80 relative ">
+                        <p class="text-gray-500 mb-12 mt-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat.
+                        </p>
+                        <div
+                            class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                            <h1 class="text-4xl font-bold text-blue-950">FH</h1>
+                        </div>
+                    </div>
+                    <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
+                    <h1 class=" text-white text-xl text-center font-regular">Director</h1>
+                </div>
+                <div class="w-4/12 -ml-8 mt-16 z-30 keen-slider__slide">
+                    <div class="rounded-2xl bg-white p-8   text-center min-h-80 relative ">
+                        <p class="text-gray-500 mb-12 mt-4">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore
+                            magna aliquam erat volutpat.
+                        </p>
+                        <div
+                            class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                            <h1 class="text-4xl font-bold text-blue-950">FH</h1>
+                        </div>
+                    </div>
+                    <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Farouk Hamadi</h1>
+                    <h1 class=" text-white text-xl text-center font-regular">Director</h1>
+                </div>
+            </div> -->
                 </div>
 
+                <div id="my-keen-slider" class="keen-slider">
+                    <div class="keen-slider__slide number-slide1">
+                        <div class=" mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    We highly recommend Talkcoms Limited. For three years, their exceptional support and
+                                    technical expertise have been
+                                    invaluable. Their integrated call center solution, combining CRM, social media, and
+                                    email technologies, is user-friendly
+                                    and reliable. It seamlessly integrates with our CRM systems, enabling efficient
+                                    management of customer interactions.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12 -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">CL</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Chunic Limited</h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Logistics</h1>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide2">
+                        <div class=" mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    Talkcoms Limited has been providing JCT Solutions, including call center and IP
+                                    telephony services, to our company.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">IS</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Imarisha Sacco</h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Finance</h1>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide3">
+                        <div class=" mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    Talkcoms Limited has been providing ICT solutions, including CCTV, biometrics, metal
+                                    detectors/scanners, communication
+                                    radios, and other security accessories, to our company.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">FH</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Patriotic Group
+                            </h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Security</h1>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide4">
+                        <div class=" mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    We highly recommend Talkcoms Limited. They developed a solution that enhanced our
+                                    communication with customers across
+                                    all channels with a user-friendly interface, improving our efficiency and
+                                    reliability. We are confident in their
+                                    services.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">AE</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">East Africa
+                                Customer Care Limited</h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide5">
+                        <div class="mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    Talkcoms Limited has been providing ICT solutions to us, including the supply and
+                                    delivery of toners, cartridges,
+                                    software, computers, printers, projectors, and networking accessories. They also
+                                    handle the repair and maintenance of
+                                    various ICT equipment. We are pleased to support their tender application.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">JC</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Jamiitech
+                                Communications</h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide6">
+                        <div class=" mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    We have used the IT services of Talkcoms Limited on several occasions and highly
+                                    recommend them for their work. They
+                                    have consistently proven to be efficient and capable.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">RA</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Rivelco Agrifoods
+                                LTD</h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Agriculture</h1>
+                        </div>
+                    </div>
+                    <div class="keen-slider__slide number-slide7">
+                        <div class=" mt-16 w-full z-30 ">
+                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                <p class="text-gray-500 mb-12 mt-4">
+                                    We highly recommend the services of Talkcoms Limited as providers of managed IT and
+                                    support services. Since 2016,
+                                    Talkcoms has helped us set up and scale our IT infrastructure. They are
+                                    professional, fair, and timely, often going out
+                                    of their way to provide sustainable solutions.
+                                </p>
+                                <div
+                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                    <h1 class="text-4xl font-bold text-blue-950">SEA</h1>
+                                </div>
+
+                            </div>
+                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Snetor East Africa
+                                Limited</h1>
+                            <h1 class=" text-white text-xl text-center font-regular">Manufacturing</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1588,9 +1767,26 @@
 
 
 
+    <script src="./js/keenslider.js"></script>
     <script src="./js/flowbite.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/init-slier.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+    <script>
+        var slider = new KeenSlider("#my-keen-slider", {
+            breakpoints: {
+                "(min-width: 400px)": {
+                    slides: { perView: 2, spacing: 5 },
+                },
+                "(min-width: 1000px)": {
+                    slides: { perView: 3, spacing: 10 },
+                },
+            },
+            slides: { perView: 1 },
+        })
+    </script> -->
+
 </body>
 
 </html>

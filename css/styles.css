@@ -135,3 +135,37 @@ body {
     background: linear-gradient(83.03deg, #0D80BA 64.67%, #8AC440 102.34%);
     border-radius: 18px;
 }
+
+
+.testimonial-left {
+    margin-right: -2rem;
+    margin-left: 2rem;
+    /* margin-top: 4rem; */
+}
+
+.testimonial-right {
+    margin-left: -2rem;
+    margin-right: 2rem;
+    /* margin-top: 4rem; */
+}
+
+.testimonial-left>div>div,
+.testimonial-right>div>div {
+    background-color: #FFFFFF;
+}
+
+.testimonial-center {
+    margin-top: -4rem;
+    transform: scale(122.29%);
+    z-index: 40;
+}
+
+.testimonial-center>div>div {
+    background-color: #0D80BA;
+
+    z-index: 40;
+}
+
+.testimonial-center>div>div>p {
+    color: #FFFFFF !important;
+}
