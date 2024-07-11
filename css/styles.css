@@ -106,3 +106,15 @@ body {
     border-radius: 12061.8px;
     transform: rotate(-87.92deg);
 }
+
+.select-faq {
+
+    background: rgba(13, 128, 186, 0.06);
+    border: 1px solid #0D80BA;
+    border-radius: 6px;
+}
+
+.blue-dot {
+
+    background: #0D80BA;
+}
