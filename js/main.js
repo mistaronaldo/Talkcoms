@@ -24,6 +24,7 @@ $(document).ready(function () {
 
 
     $('#faq01').fadeIn(500);
+    $('#faq-1').addClass('select-faq');
 
     $('#faq-1').on('click', function () {
         hidefaqs();
@@ -38,7 +39,7 @@ $(document).ready(function () {
     $('#faq-3').on('click', function () {
         hidefaqs();
         $('#faq03').fadeIn(500);
-        $('#faq-4').addClass('select-faq');
+        $('#faq-3').addClass('select-faq');
     })
     $('#faq-4').on('click', function () {
         hidefaqs();
