@@ -118,3 +118,20 @@ body {
 
     background: #0D80BA;
 }
+
+.bg-overlay {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3337710084033614) 0%, rgba(13, 128, 186, 0) 100%);
+}
+
+.bg-card-blue {
+
+    background: radial-gradient(80.82% 97.69% at 87.4% 81.63%, rgba(13, 128, 186, 0.56) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 1px solid rgba(13, 128, 186, 0.15);
+    border-radius: 12px;
+}
+
+.bg-g-started {
+    background: linear-gradient(83.03deg, #0D80BA 64.67%, #8AC440 102.34%);
+    border-radius: 18px;
+}
