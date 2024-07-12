@@ -41,6 +41,16 @@ slider.on("slideChanged", () => {
   updateForm(slide, slider)
 });
 
+setInterval(function () {
+  var slide = slider.track.details.rel
+  if (slide === slider.track.details.slides.length - 3) {
+    slider.track.to(1)
+  } else {
+
+    slider.next();
+  }
+
+}, 10000)
 
 slider.slides[0].classList.add('testimonial-left');
 slider.slides[1].classList.add('testimonial-center');

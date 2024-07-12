@@ -49,11 +49,15 @@ body {
     background: linear-gradient(24deg, rgba(13, 128, 186, 0.6558998599439776) 20%, rgba(13, 128, 186, 0.6558998599439776) 57%, rgba(138, 196, 64, 0) 100%);
 }
 
-.bg-bro {
-    background-image: url(../images/landing-bro.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+@media (min-width:640px) {
+
+
+    .bg-bro {
+        background-image: url(../images/landing-bro.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .sect-selected .sect {
