@@ -118,6 +118,10 @@ body {
     border-radius: 6px;
 }
 
+.faq {
+    padding-bottom: .2rem;
+}
+
 .blue-dot {
 
     background: #0D80BA;
