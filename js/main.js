@@ -86,7 +86,7 @@ const hideAll = (except) => {
     $('#select-crm').removeClass('sect-selected');
     $('#select-zoho').removeClass('sect-selected');
 
-
+    $('.dots').removeClass('dot-selected');
 
 
 
@@ -119,6 +119,66 @@ const hideAll = (except) => {
     }
 }
 
+
+$(document).ready(function () {
+    // jumps to the 3rd position (position starts from 0)
+    hideAll();
+    var index = 0;
+    $('#dot-outsourced').addClass('dot-selected');
+
+    $('#dot-outsourced').on('click', function () {
+        hideAll(0);
+        index = 0;
+        $('#dot-outsourced').addClass('dot-selected');
+    })
+
+    $('#dot-contactcenter').on('click', function () {
+        hideAll(1);
+        index = 1;
+        $('#dot-contactcenter').addClass('dot-selected');
+    })
+    $('#dot-erp').on('click', function () {
+        hideAll(2);
+        index = 2;
+        $('#dot-erp').addClass('dot-selected');
+    })
+    $('#dot-calling').on('click', function () {
+        hideAll(3);
+        index = 3;
+        $('#dot-calling').addClass('dot-selected');
+    })
+    $('#dot-itaas').on('click', function () {
+        hideAll(4);
+        index = 4;
+        $('#dot-itaas').addClass('dot-selected');
+    })
+
+    $('#dot-web').on('click', function () {
+        hideAll(5);
+        index = 5;
+        $('#dot-web').addClass('dot-selected');
+    })
+    $('#dot-pbx').on('click', function () {
+        hideAll(6);
+        index = 6;
+        $(this).addClass('dot-selected');
+    })
+    $('#dot-crm').on('click', function () {
+        hideAll(7);
+        index = 7;
+        $('#dot-crm').addClass('dot-selected');
+    })
+    $('#dot-zoho').on('click', function () {
+        hideAll(8);
+        index = 8;
+        $('#dot-zoho').addClass('dot-selected');
+    })
+
+    // setInterval(function (index) {
+    //     hideAll(index + 1);
+    //     $('#dot-outsourced').addClass('dot-selected');
+    // }, 10000)
+})
 
 
 $(document).ready(function () {

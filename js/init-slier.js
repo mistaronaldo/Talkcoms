@@ -48,6 +48,7 @@ setInterval(function () {
   } else {
 
     slider.next();
+    mobileslider.next();
   }
 
 }, 10000)
