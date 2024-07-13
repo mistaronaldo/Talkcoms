@@ -168,7 +168,7 @@
 
             </nav>
         </header>
-        <div class="relative isolate px-6 pt-14 lg:px-8 ">
+        <div class="relative isolate px-6 sm:pt-24 md:pt-14 lg:px-8 overflow-x-clip">
 
             <div class="absolute inset-r-0 -top-52  rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl "
                 aria-hidden="true">
@@ -176,14 +176,14 @@
                     class="relative left-[calc(80%)] aspect-[1155/678] w-[106.125rem] -translate-x-1/2 rotate-[157deg] bg-gradient-to-tr from-[#0d80ba6b] to-[#0D80BA] opacity-20 ">
                 </div>
             </div>
-            <div class="mx-auto  p-16 pt-20 lg:mt-28 container relative h-1/6  rounded-2xl">
+            <div class="mx-auto  lg:p-16 pt-20 lg:mt-28 container relative h-1/6  rounded-2xl">
 
 
-                <div class="grid grid-cols-2">
+                <div class="grid lg:grid-cols-2">
                     <div class="px-5">
                         <div class="flex items-center gap-6">
                             <div
-                                class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center shadow-lg">
+                                class="lg:p-4 p-2 bg-gray-50 rounded-full lg:h-20 h-12 lg:w-20 w-12 flex items-center justify-center shadow-lg">
                                 <svg width="55" height="38" viewBox="0 0 55 38" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_7550_3155)">
@@ -206,22 +206,29 @@
 
 
                             </div>
-                            <h1 class="text-2xl text-[#0D80BA] font-bold">Omnichannel Contact Center Solution</h1>
+                            <h1 class="lg:text-2xl text-[#0D80BA] font-bold">Omnichannel Contact Center Solution</h1>
                         </div>
-                        <h1 class="text-5xl font-bold tracking-tight text-blue-950  my-5">
+                        <div id="landing-img-cont" class="lg:hidden MOBILE my-4">
+
+                        </div>
+                        <h1
+                            class="lg:text-5xl text-2xl font-bold tracking-tight text-blue-950 text-center lg:text-left my-5">
                             Unify Customer Engagement with Our Omnichannel
                             Contact Center Software
                         </h1>
-                        <p class="mt-5 text-lg font-regular ">Deliver seamless and personalized customer experiences
+                        <p class="mt-5 lg:text-lg font-regular text-center lg:text-left">Deliver seamless and
+                            personalized
+                            customer experiences
                             across all communication channels, including phone, email, live
                             chat, social media, and SMS. Enhance your customer service with intelligent call routing,
                             CRM integration, automated
                             workflows, and real-time analytics to ensure every interaction is efficient and effective.
                         </p>
-                        <p class="text-sm mt-8 font-light text-[#0D80BA]">Ready to Elevate Your IT Experience?
+                        <p class="text-sm mt-8 font-light text-[#0D80BA] text-center lg:text-left">Ready to Elevate Your
+                            IT Experience?
                         </p>
 
-                        <div class="grid grid-cols-2 w-3/5 gap-4 my-20">
+                        <div class="grid grid-cols-2 lg:w-3/5 gap-4 lg:my-20 my-10">
                             <a href="/services/outsourced.html"
                                 class="text-md bg-talkgreen text-white p-4 h-full rounded w-full font-semibold justify-center items-center flex leading-6">
                                 BOOK A DEMO
@@ -234,9 +241,12 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img class="w-40 -top-10 absolute -right-10" src="../images/green-dot.png" alt="" srcset="">
-                        <img class="relative z-10" src="../images/omnichannel/Group 401.png" alt="" srcset="">
-                        <img class="w-40 bottom-36 absolute -left-10" src="../images/blue-dot.png" alt="" srcset="">
+                        <img class="hidden lg:block w-40 -top-10 absolute -right-10" src="../images/green-dot.png"
+                            alt="" srcset="">
+                        <img id="landing-img" class="relative z-10" src="../images/omnichannel/Group 401.png" alt=""
+                            srcset="">
+                        <img class="hidden lg:block w-40 bottom-36 absolute -left-10" src="../images/blue-dot.png"
+                            alt="" srcset="">
                     </div>
                 </div>
 
@@ -256,13 +266,14 @@
 
 
 
-        <div class="mx-auto px-24 relative container ">
-            <img class="absolute -z-0 -right-44 w-[calc(14%)]" src="../images/stripeddownarrow.png" alt="" srcset="">
+        <div class="mx-auto  lg:px-24 px-4 relative container ">
+            <img class=" hidden lg:block absolute -z-0  -right-44 w-[calc(14%)]" src="../images/stripeddownarrow.png"
+                alt="" srcset="">
             <div class="relative">
                 <div id="animation-carousel" class="relative w-full " data-carousel="slide"
                     data-carousel-interval="10000">
                     <div class="flex justify-between mb-5">
-                        <h2 class="text-4xl text-blue-900 font-bold">Talkcoms Omnichannel CC Features</h2>
+                        <h2 class="lg:text-4xl text-blue-900 font-bold">Talkcoms Omnichannel CC Features</h2>
                         <div class="flex gap-1">
                             <button type="button"
                                 class=" flex items-center justify-center h-full px-2 cursor-pointer group focus:outline-none"
@@ -302,12 +313,17 @@
                             </button>
                         </div>
                     </div>
+                    <!-- Carousel mobile wrapper -->
+                    <div id="carousel-item-mobile" class="relative min-h-[55rem] overflow-hidden rounded-lg  lg:hidden">
+
+                    </div>
+
                     <!-- Carousel wrapper -->
-                    <div class="relative min-h-[55rem] overflow-hidden rounded-lg ">
+                    <div class="relative min-h-[55rem] overflow-hidden rounded-lg hidden lg:block">
                         <!-- Item 1 -->
                         <div class="hidden duration-200 h-full ease-linear" data-carousel-item>
                             <div class="flex gap-8">
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item ">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/Group 397.png" alt="" srcset="">
                                     </div>
@@ -322,7 +338,7 @@
                                             ensuring a consistent and seamless customer experience.</p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/Group 398.png" alt="" srcset="">
                                     </div>
@@ -339,7 +355,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/image 10.png" alt="" srcset="">
                                     </div>
@@ -361,7 +377,7 @@
                         </div>
                         <div class="hidden duration-200 ease-linear" data-carousel-item>
                             <div class="flex gap-8">
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/dialer.png" alt="" srcset="">
                                     </div>
@@ -378,7 +394,7 @@
                                             impression.</p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/Realtime dashboard 1.png" alt=""
                                             srcset="">
@@ -396,7 +412,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/image 21.png" alt="" srcset="">
                                     </div>
@@ -418,7 +434,7 @@
                         </div>
                         <div class="hidden duration-200 ease-linear" data-carousel-item>
                             <div class="flex gap-8">
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/Group 400.png" alt="" srcset="">
                                     </div>
@@ -433,7 +449,7 @@
                                             excellence across every touchpoint.</p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/Group 399.png" alt="" srcset="">
                                     </div>
@@ -449,7 +465,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/omnichannel/Omnichannel support 1.png" alt=""
                                             srcset="">
@@ -473,16 +489,29 @@
 
                     </div>
 
-
+                    <div
+                        class="lg:hidden absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
+                    </div>
                 </div>
             </div>
 
 
         </div>
-        <div class="mx-auto px-24 relative container">
+        <div class="mx-auto  lg:px-24 px-4 relative container">
 
 
-            <h1 class="text-blue-800 mb-20 text-center text-5xl font-bold">Why Choose Talkcoms Omnichannel CC</h1>
+            <h1 class="text-blue-800 mb-20 text-centerlg:text-5xl text-2xl font-bold">Why Choose Talkcoms Omnichannel CC
+            </h1>
 
             <div class="grid grid-cols-3 gap-8">
                 <div>
@@ -690,7 +719,7 @@
 
 
         <div class="mx-auto p-24  container">
-            <h1 class="text-blue-800 mb-20 text-center text-5xl font-bold">Product Pricing & Packaging</h1>
+            <h1 class="text-blue-800 mb-20 text-centerlg:text-5xl text-2xl font-bold">Product Pricing & Packaging</h1>
 
             <div class="grid grid-cols-4 text-white text-center gap-4">
                 <div
@@ -813,7 +842,7 @@
         </div>
 
 
-        <div class="mx-auto px-24  container">
+        <div class="mx-auto  lg:px-24 px-4  container">
             <div class="px-40 my-14">
                 <h1 class="text-blue-900 font-bold text-xl text-center">Ready To Get Started?</h1>
                 <p class="text-gray-600 my-10 mx-32 text-center">
@@ -911,9 +940,9 @@
                 <div class=" relative rounded-full h-full   bg-circle-grad opacity-10 ">
                 </div>
             </div>
-            <div class="mx-auto px-24 py-20 relative container">
+            <div class="mx-auto  lg:px-24 px-4 py-20 relative container">
                 <div class="z-30">
-                    <h1 class=" text-white font-bold text-5xl text-center py-6">What our clients say...</h1>
+                    <h1 class=" text-white font-boldlg:text-5xl text-2xl text-center py-6">What our clients say...</h1>
                 </div>
 
 
@@ -1064,7 +1093,7 @@
         <!-- FAQ -->
         <div class="container p-24 m-auto">
             <div class="mx-32">
-                <h1 class="font-bold text-5xl text-blue-900 mb-10">FAQ's</h1>
+                <h1 class="font-boldlg:text-5xl text-2xl text-blue-900 mb-10">FAQ's</h1>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="grid gap-y-4">
                         <div id="faq-1" class="faq rounded-lg border select-faq cursor-pointer p-4">
@@ -1177,20 +1206,22 @@
 
 
         <!-- Footer -->
-        <div class="bg-gray-50 px-36 py-16">
-            <p class="text-sm font-semibold text-gray-500 leading-8 text-right">Copyright © 2022 All Rights</p>
-            <hr>
+        <div class="bg-gray-50 lg:px-36 lg:py-16">
+            <p class="text-sm font-semibold text-gray-500 leading-8 p-2 lg:p-0 text-right hidden lg:block">Copyright ©
+                2022 All Rights
+            </p>
+            <hr class="my-10 lg:my-0">
 
-            <div class="grid grid-cols-4 my-10">
-                <div>
-                    <img class="h-24 w-auto" src="../images/logo.png" alt="" srcset="">
-                    <p class="text-gray-500 font-normal py-12">
+            <div class="lg:grid gap-y-8  lg:grid-cols-4 my-10 p-4 lg:p-0 flex flex-wrap">
+                <div class="my-2 lg:my-0">
+                    <img class="h-24 w-auto my-4" src="./images/logo.png" alt="" srcset="">
+                    <p class="text-gray-500 font-normal ">
                         We are well known for being the best communication and
                         collaboration provider.
                     </p>
                 </div>
-                <div>
-                    <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Company</h1>
+                <div class="my-2 lg:my-0 w-full">
+                    <h1 class="text-[#69A71A] font-semibold leading-10 text-xl ">Company</h1>
 
                     <div class="block">
                         <a class="block text-gray-500" href="/about-us.html">About Us</a>
@@ -1199,26 +1230,26 @@
                         <a class="block text-gray-500" href="">Terms of Use</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Product</h1>
 
                     <div class="">
                         <a class="block text-gray-500" href="#">Features</a>
                         <a class="block text-gray-500" href="#">Pricing</a>
                         <a class="block text-gray-500" href="">Download Profile</a>
-                        <a href="">Terms of Use</a>
+                        <a class="block text-gray-500" href="">Terms of Use</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Connect With Us</h1>
                     <a href="">
-                        <img class="h-10" src="../images/socials.png" alt="" srcset="">
+                        <img class="h-10" src="./images/socials.png" alt="" srcset="">
                     </a>
                 </div>
 
 
                 <!-- Second Row -->
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">United Kingdom</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         The Kings Centre Main Road
@@ -1226,7 +1257,7 @@
                         United Kingdom.
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Nairobi</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         1st Floor
@@ -1236,13 +1267,13 @@
                         NAIROBI.
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Eldama Ravine</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         3rd Floor, Skyrise Plaza, Eldama Ravine Township, Along Ravine - Nakuru Road
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Quick Links</h1>
                     <div class="">
                         <a class="block text-gray-500" href="/services/outsourced.html">Call Centre</a>
@@ -1252,7 +1283,7 @@
                         <a class="block text-gray-500" href="/integration/zoho.html">Zoho Workspace</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <a href="tel:+447538816037">
 
                         <div class="flex items-center gap-4">
@@ -1281,7 +1312,7 @@
                     </a>
 
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <a href="tel:+254747039334">
                         <div class="flex items-center gap-4">
                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
@@ -1309,7 +1340,7 @@
                     </a>
 
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-2 ">
                     <a href="mailto:solutions@talkcoms.io">
 
                         <div class="flex items-center gap-4">
@@ -1322,6 +1353,11 @@
 
                 </div>
             </div>
+            <hr class="lg:hidden">
+            <p class="text-sm font-semibold text-gray-500 mb-10 leading-8 p-2 lg:p-0 text-center lg:hidden block ">
+                Copyright ©
+                2022 All Rights
+            </p>
         </div>
     </div>
 
@@ -1359,8 +1395,8 @@
     <script src="/js/keenslider.js"></script>
     <script src="/js/flowbite.min.js"></script>
     <script src="/js/jquery.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/init-slier.js"></script>
+    <script src="/js/products.js"></script>
+    <!-- <script src="/js/init-slier.js"></script> -->
 </body>
 
 </html>

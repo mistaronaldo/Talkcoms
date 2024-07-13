@@ -183,7 +183,7 @@
                     <div class="px-5">
                         <div class="flex items-center gap-6">
                             <div
-                                class="p-4 bg-gray-50 rounded-full h-20 w-20 flex items-center justify-center shadow-lg">
+                                class="lg:p-4 p-2 bg-gray-50 rounded-full lg:h-20 h-12 lg:w-20 w-12 flex items-center justify-center shadow-lg">
                                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_7550_2152)">
@@ -252,7 +252,7 @@
 
 
 
-        <div class="mx-auto px-24 relative container">
+        <div class="mx-auto  lg:px-24 px-4 relative container">
             <div class="relative">
                 <div id="animation-carousel" class="relative w-full " data-carousel="slide"
                     data-carousel-interval="10000" data-carousel-interval="10000">
@@ -483,10 +483,10 @@
 
 
 
-        <div class="mx-auto px-24 relative container ">
+        <div class="mx-auto  lg:px-24 px-4 relative container ">
 
 
-            <h1 class="text-blue-800 mb-20 text-center text-5xl font-bold">Why Choose Talkcoms PBX</h1>
+            <h1 class="text-blue-800 mb-20 text-centerlg:text-5xl text-2xl font-bold">Why Choose Talkcoms PBX</h1>
 
             <div class="grid grid-cols-3 gap-8">
                 <div>
@@ -589,7 +589,7 @@
 
 
         <div class="mx-auto p-24 container">
-            <h1 class="text-blue-800 mb-20 text-center text-5xl font-bold">Product Packages & Pricing</h1>
+            <h1 class="text-blue-800 mb-20 text-centerlg:text-5xl text-2xl font-bold">Product Packages & Pricing</h1>
 
             <div class="grid grid-cols-3 mx-40 text-white text-center gap-4">
                 <div
@@ -701,7 +701,7 @@
 
 
 
-        <div class="mx-auto px-24  container">
+        <div class="mx-auto  lg:px-24 px-4  container">
             <div class="px-40 my-14">
                 <h1 class="text-blue-900 font-bold text-xl text-center">Ready To Get Started?</h1>
                 <p class="text-gray-600 my-10 mx-32 text-center">
@@ -799,9 +799,9 @@
                 <div class=" relative rounded-full h-full   bg-circle-grad opacity-10 ">
                 </div>
             </div>
-            <div class="mx-auto px-24 py-20 relative container">
+            <div class="mx-auto  lg:px-24 px-4 py-20 relative container">
                 <div class="z-30">
-                    <h1 class=" text-white font-bold text-5xl text-center py-6">What our clients say...</h1>
+                    <h1 class=" text-white font-boldlg:text-5xl text-2xl text-center py-6">What our clients say...</h1>
                 </div>
 
 
@@ -952,7 +952,7 @@
         <!-- FAQ -->
         <div class="container p-24 m-auto">
             <div class="mx-32">
-                <h1 class="font-bold text-5xl text-blue-900 mb-10">FAQ's</h1>
+                <h1 class="font-boldlg:text-5xl text-2xl text-blue-900 mb-10">FAQ's</h1>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="grid gap-y-4">
                         <div id="faq-1" class="faq rounded-lg border select-faq cursor-pointer p-4">
@@ -1065,20 +1065,22 @@
 
 
         <!-- Footer -->
-        <div class="bg-gray-50 px-36 py-16">
-            <p class="text-sm font-semibold text-gray-500 leading-8 text-right">Copyright © 2022 All Rights</p>
-            <hr>
+        <div class="bg-gray-50 lg:px-36 lg:py-16">
+            <p class="text-sm font-semibold text-gray-500 leading-8 p-2 lg:p-0 text-right hidden lg:block">Copyright ©
+                2022 All Rights
+            </p>
+            <hr class="my-10 lg:my-0">
 
-            <div class="grid grid-cols-4 my-10">
-                <div>
-                    <img class="h-24 w-auto" src="../images/logo.png" alt="" srcset="">
-                    <p class="text-gray-500 font-normal py-12">
+            <div class="lg:grid gap-y-8  lg:grid-cols-4 my-10 p-4 lg:p-0 flex flex-wrap">
+                <div class="my-2 lg:my-0">
+                    <img class="h-24 w-auto my-4" src="./images/logo.png" alt="" srcset="">
+                    <p class="text-gray-500 font-normal ">
                         We are well known for being the best communication and
                         collaboration provider.
                     </p>
                 </div>
-                <div>
-                    <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Company</h1>
+                <div class="my-2 lg:my-0 w-full">
+                    <h1 class="text-[#69A71A] font-semibold leading-10 text-xl ">Company</h1>
 
                     <div class="block">
                         <a class="block text-gray-500" href="/about-us.html">About Us</a>
@@ -1087,26 +1089,26 @@
                         <a class="block text-gray-500" href="">Terms of Use</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Product</h1>
 
                     <div class="">
                         <a class="block text-gray-500" href="#">Features</a>
                         <a class="block text-gray-500" href="#">Pricing</a>
                         <a class="block text-gray-500" href="">Download Profile</a>
-                        <a href="">Terms of Use</a>
+                        <a class="block text-gray-500" href="">Terms of Use</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Connect With Us</h1>
                     <a href="">
-                        <img class="h-10" src="../images/socials.png" alt="" srcset="">
+                        <img class="h-10" src="./images/socials.png" alt="" srcset="">
                     </a>
                 </div>
 
 
                 <!-- Second Row -->
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">United Kingdom</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         The Kings Centre Main Road
@@ -1114,7 +1116,7 @@
                         United Kingdom.
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Nairobi</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         1st Floor
@@ -1124,13 +1126,13 @@
                         NAIROBI.
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Eldama Ravine</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         3rd Floor, Skyrise Plaza, Eldama Ravine Township, Along Ravine - Nakuru Road
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Quick Links</h1>
                     <div class="">
                         <a class="block text-gray-500" href="/services/outsourced.html">Call Centre</a>
@@ -1140,7 +1142,7 @@
                         <a class="block text-gray-500" href="/integration/zoho.html">Zoho Workspace</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <a href="tel:+447538816037">
 
                         <div class="flex items-center gap-4">
@@ -1169,7 +1171,7 @@
                     </a>
 
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <a href="tel:+254747039334">
                         <div class="flex items-center gap-4">
                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
@@ -1197,7 +1199,7 @@
                     </a>
 
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-2 ">
                     <a href="mailto:solutions@talkcoms.io">
 
                         <div class="flex items-center gap-4">
@@ -1210,6 +1212,11 @@
 
                 </div>
             </div>
+            <hr class="lg:hidden">
+            <p class="text-sm font-semibold text-gray-500 mb-10 leading-8 p-2 lg:p-0 text-center lg:hidden block ">
+                Copyright ©
+                2022 All Rights
+            </p>
         </div>
     </div>
 

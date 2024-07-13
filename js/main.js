@@ -122,9 +122,7 @@ const hideAll = (except) => {
 
 $(document).ready(function () {
     // jumps to the 3rd position (position starts from 0)
-    hideAll();
     var index = 0;
-    $('#dot-outsourced').addClass('dot-selected');
 
     $('#dot-outsourced').on('click', function () {
         hideAll(0);
@@ -184,6 +182,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     // jumps to the 3rd position (position starts from 0)
     hideAll();
+    $('#dot-outsourced').addClass('dot-selected');
 
     $('#select-outsourced').on('mouseenter', function () {
         hideAll(0);
@@ -226,3 +225,6 @@ $(document).ready(function () {
 
 
 });
+
+
+

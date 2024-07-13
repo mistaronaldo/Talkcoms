@@ -189,23 +189,11 @@ body {
 
 
 @media (max-width:640px) {
-    .logo {
-        width: 100px;
-        height: 100px;
-        animation: scroll 60s linear infinite;
+    body {
+        align-items: center;
+        justify-content: center;
     }
 
-    .slide-track {
-        width: 100%;
-        display: flex;
-        gap: 3em;
-        overflow: hidden;
-    }
-
-    .slider {
-        background-color: transparent;
-        padding: 2em;
-    }
 
     @keyframes scroll {
         0% {
@@ -213,7 +201,27 @@ body {
         }
 
         100% {
-            transform: translatex(-1000%)
+            transform: translateX(calc(-250px * 8))
+        }
+    }
+
+    .slider {
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: auto;
+
+        .slide-track {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(200px * 16);
+        }
+
+        .slide {
+            width: 200px;
+            display: flex;
+            justify-content: center;
         }
     }
 }
