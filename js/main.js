@@ -88,12 +88,6 @@ const hideAll = (except) => {
 
     $('.dots').removeClass('dot-selected');
 
-
-
-
-
-
-
     if (except === 0) {
         $('#outsourced').fadeIn(100);
     } else if (except === 1) {
@@ -121,49 +115,50 @@ const hideAll = (except) => {
 
 
 $(document).ready(function () {
-        if (screenWidth >= 640) {
-    hideAll();
-    $('#dot-outsourced').addClass('dot-selected');
+    var screenWidth = $(window).width();
+    if (screenWidth >= 640) {
+        hideAll();
+        $('#dot-outsourced').addClass('dot-selected');
 
-    $('#select-outsourced').on('mouseenter', function () {
-        hideAll(0);
-        $('#select-outsourced').addClass('sect-selected');
-    })
+        $('#select-outsourced').on('mouseenter', function () {
+            hideAll(0);
+            $('#select-outsourced').addClass('sect-selected');
+        })
 
-    $('#select-contactcenter').on('mouseenter', function () {
-        hideAll(1);
-        $('#select-contactcenter').addClass('sect-selected');
-    })
-    $('#select-erp').on('mouseenter', function () {
-        hideAll(2);
-        $('#select-erp').addClass('sect-selected');
-    })
-    $('#select-calling').on('mouseenter', function () {
-        hideAll(3);
-        $('#select-calling').addClass('sect-selected');
-    })
-    $('#select-itaas').on('mouseenter', function () {
-        hideAll(4);
-        $('#select-itaas').addClass('sect-selected');
-    })
+        $('#select-contactcenter').on('mouseenter', function () {
+            hideAll(1);
+            $('#select-contactcenter').addClass('sect-selected');
+        })
+        $('#select-erp').on('mouseenter', function () {
+            hideAll(2);
+            $('#select-erp').addClass('sect-selected');
+        })
+        $('#select-calling').on('mouseenter', function () {
+            hideAll(3);
+            $('#select-calling').addClass('sect-selected');
+        })
+        $('#select-itaas').on('mouseenter', function () {
+            hideAll(4);
+            $('#select-itaas').addClass('sect-selected');
+        })
 
-    $('#select-web').on('mouseenter', function () {
-        hideAll(5);
-        $('#select-web').addClass('sect-selected');
-    })
-    $('#select-pbx').on('mouseenter', function () {
-        hideAll(6);
-        $(this).addClass('sect-selected');
-    })
-    $('#select-crm').on('mouseenter', function () {
-        hideAll(7);
-        $('#select-crm').addClass('sect-selected');
-    })
-    $('#select-zoho').on('mouseenter', function () {
-        hideAll(8);
-        $('#select-zoho').addClass('sect-selected');
-    })
-        }
+        $('#select-web').on('mouseenter', function () {
+            hideAll(5);
+            $('#select-web').addClass('sect-selected');
+        })
+        $('#select-pbx').on('mouseenter', function () {
+            hideAll(6);
+            $(this).addClass('sect-selected');
+        })
+        $('#select-crm').on('mouseenter', function () {
+            hideAll(7);
+            $('#select-crm').addClass('sect-selected');
+        })
+        $('#select-zoho').on('mouseenter', function () {
+            hideAll(8);
+            $('#select-zoho').addClass('sect-selected');
+        })
+    }
 
 });
 
