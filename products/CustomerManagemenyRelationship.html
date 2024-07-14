@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <div class="bg-white">
+    <div class="bg-white overflow-hidden">
         <header class="absolute inset-x-0 top-0 z-50 ">
             <nav class="">
                 <div class="container flex flex-wrap items-center justify-between mx-auto p-4">
@@ -170,17 +170,17 @@
         </header>
         <div class="relative isolate px-6 pt-14 lg:px-8 ">
 
-            <div class="absolute inset-r-0 -top-52  rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl "
+            <div class="absolute inset-r-0 -top-52 max-sm:w-full rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl "
                 aria-hidden="true">
                 <div
                     class="relative left-[calc(80%)] aspect-[1155/678] w-[106.125rem] -translate-x-1/2 rotate-[157deg] bg-gradient-to-tr from-[#0d80ba6b] to-[#0D80BA] opacity-20 ">
                 </div>
             </div>
-            <div class="mx-auto  p-16 pt-20 lg:mt-28 container relative h-1/6  rounded-2xl">
+            <div class="mx-auto lg:p-16 lg:pt-20 pt-10 lg:mt-28 container relative lg:h-1/6  rounded-2xl">
 
 
-                <div class="grid grid-cols-2">
-                    <div class="px-5">
+                <div class="grid lg:grid-cols-2">
+                    <div class="lg:px-5">
                         <div class="flex items-center gap-6">
                             <div
                                 class="lg:p-4 p-2 bg-gray-50 rounded-full lg:h-20 h-12 lg:w-20 w-12 flex items-center justify-center shadow-lg">
@@ -209,10 +209,15 @@
                             </div>
                             <h1 class="text-2xl text-[#0D80BA] font-bold">Talkcoms CRM</h1>
                         </div>
-                        <h1 class="text-5xl font-bold tracking-tight text-blue-950  my-5">
+                        <div id="landing-img-cont" class="lg:hidden MOBILE my-4">
+
+                        </div>
+                        <h1
+                            class="text-5xl max-sm:text-lg max-sm:text-center font-bold tracking-tight text-blue-950  my-5">
                             Enhance Customer Relationships with Talkcoms CRM
                         </h1>
-                        <p class="mt-5 text-lg font-regular ">Empower Your Business with a Comprehensive CRM Solution
+                        <p class="mt-5 lg:text-lg font-regular max-sm:text-center">Empower Your Business with a
+                            Comprehensive CRM Solution
                             that Centralizes Customer Data, Automates Sales Processes, and
                             Improves Customer Satisfaction. Transform Your Customer Interactions and Drive Growth with
                             Our Customizable,
@@ -220,7 +225,7 @@
                         <p class="text-sm mt-8 font-light text-[#0D80BA]">Ready to Enhance Your Customer Relationships?
                         </p>
 
-                        <div class="grid grid-cols-2 w-3/5 gap-4 my-20">
+                        <div class="grid grid-cols-2 lg:w-3/5 gap-4 my-20">
                             <a href="/services/outsourced.html"
                                 class="text-md bg-talkgreen text-white p-4 h-full rounded w-full font-semibold justify-center items-center flex leading-6">
                                 BOOK A DEMO
@@ -233,9 +238,12 @@
                         </div>
                     </div>
                     <div class="relative">
-                        <img class="w-40 -top-10 absolute -right-10" src="../images/green-dot.png" alt="" srcset="">
-                        <img class="relative z-10" src="../images/Customer/Group 402.png" alt="" srcset="">
-                        <img class="w-40 bottom-36 absolute -left-10" src="../images/blue-dot.png" alt="" srcset="">
+                        <img class="hidden lg:block w-40 -top-10 absolute -right-10" src="../images/green-dot.png"
+                            alt="" srcset="">
+                        <img id="landing-img" class="relative z-10" src="../images/Customer/Group 402.png" alt=""
+                            srcset="">
+                        <img class="hidden lg:block w-40 -top-10 absolute -right-10" src="../images/green-dot.png"
+                            alt="" srcset="">
                     </div>
                 </div>
 
@@ -300,12 +308,20 @@
                             </button>
                         </div>
                     </div>
+
+                    <!-- Carousel mobile wrapper -->
+                    <div id="carousel-item-mobile"
+                        class="relative min-h-[45rem] overflow-hidden rounded-lg  lg:hidden max-sm:mb-12">
+
+                    </div>
+
+
                     <!-- Carousel wrapper -->
-                    <div class="relative min-h-[55rem] overflow-hidden rounded-lg ">
+                    <div class="relative min-h-[55rem] overflow-hidden rounded-lg max-sm:hidden">
                         <!-- Item 1 -->
                         <div class="hidden duration-200 h-full ease-linear" data-carousel-item>
                             <div class="flex gap-8">
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Centralized-customer-data 1.png"
                                             alt="" srcset="">
@@ -323,7 +339,7 @@
                                             informed interactions.</p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Group 403.png" alt="" srcset="">
                                     </div>
@@ -340,7 +356,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Customizable Dashboards 1.png"
                                             alt="" srcset="">
@@ -363,7 +379,7 @@
                         </div>
                         <div class="hidden duration-200 ease-linear" data-carousel-item>
                             <div class="flex gap-8">
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/image 19.png" alt="" srcset="">
                                     </div>
@@ -381,7 +397,7 @@
                                             enhance your business strategies.</p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Customizable Dashboards 1.png"
                                             alt="" srcset="">
@@ -399,7 +415,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Group 404.png" alt="" srcset="">
                                     </div>
@@ -422,7 +438,7 @@
                         </div>
                         <div class="hidden duration-200 ease-linear" data-carousel-item>
                             <div class="flex gap-8">
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Intergrated modules 1.png" alt=""
                                             srcset="">
@@ -439,7 +455,7 @@
                                             support activities from anywhere, at any time.</p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/Group 406.png" alt="" srcset="">
                                     </div>
@@ -457,7 +473,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="p-2 h-auto bg-white border w-4/12 rounded-2xl">
+                                <div class="p-2 h-auto bg-white border lg:w-4/12 rounded-2xl carousel-item">
                                     <div class="relative rounded-2xl w-full">
                                         <img class="w-full" src="../images/Customer/image 18.png" alt="" srcset="">
                                     </div>
@@ -481,7 +497,28 @@
 
                     </div>
 
+                    <div
+                        class="lg:hidden absolute z-30 flex -translate-x-1/2 -bottom-8 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                            data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                            data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="5"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="6"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="7"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="8"></button>
 
+                    </div>
                 </div>
             </div>
 
@@ -491,14 +528,14 @@
 
 
         <div class="mx-auto  lg:px-24 px-4  container">
-            <div class="px-40 my-14">
+            <div class="lg:px-40 my-14 pt-10">
                 <h1 class="text-blue-900 font-bold text-xl text-center">Ready To Get Started?</h1>
-                <p class="text-gray-600 my-10 mx-32 text-center">
+                <p class="text-gray-600 my-10 lg:mx-32 text-center">
                     Drop us a message or contact us directly via the phone numbers provided. To book a demo, fill in the
                     form below to block
                     sometime to let us take you through the demo.
                 </p>
-                <div class="flex gap-6 w w-2/4 m-auto">
+                <div class="flex gap-6 lg:w-2/4 m-auto">
                     <a href="#"
                         class="text-md bg-talkgreen h-16 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5">
                         BOOK A DEMO
@@ -562,17 +599,10 @@
                                 </div>
                             </div>
 
-                            <label class="inline-flex items-center mb-5 cursor-pointer">
-                                <input type="checkbox" value="" class="sr-only peer">
-                                <div
-                                    class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:w-5 after:h-5 after:transition-all  peer-checked:bg-[#0D80BA]">
-                                </div>
-                                <span class="ms-3 text-sm font-medium text-gray-600">By selecting this, you agree to our
-                                    <a href="#" class="font-semibold text-[#69A71A]">privacy&nbsp;policy</a>.</span>
-                            </label>
+
 
                         </div>
-                        <div class="mt-10 w-1/5">
+                        <div class="mt-10 lg:w-1/5">
                             <button type="submit"
                                 class="text-md bg-talkgreen h-16 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5">Submit
                             </button>
@@ -583,165 +613,337 @@
 
 
         </div>
-        <div class="p-10 bg-bluelight-gradient relative rounded-2xl">
-            <div class="absolute h-full inset-0 w-full px-40 transform-gpu overflow-hidden " aria-hidden="true">
+
+
+        <div class="lg:p-10 bg-bluelight-gradient relative rounded-2xl">
+            <div class="absolute h-full inset-0 w-full lg:px-40 transform-gpu overflow-hidden " aria-hidden="true">
                 <div class=" relative rounded-full h-full   bg-circle-grad opacity-10 ">
                 </div>
             </div>
-            <div class="mx-auto  lg:px-24 px-4 py-20 relative container">
+            <div class="mx-auto lf:px-24 lg:py-20 py-10 relative container">
                 <div class="z-30">
-                    <h1 class=" text-white font-boldlg:text-5xl text-2xl text-center py-6">What our clients say...</h1>
+                    <h1 class=" text-white font-bold lg:text-5xl text-2xl text-center py-6">What our clients say...</h1>
+                </div>
+
+                <div class="lg:block hidden">
+
+                    <div id="my-keen-slider" class="keen-slider  ">
+                        <div class="keen-slider__slide number-slide1">
+                            <div class="mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We highly recommend Talkcoms Limited. For three years, their exceptional support
+                                        and
+                                        technical expertise have been
+                                        invaluable. Their integrated call center solution, combining CRM, social media,
+                                        and
+                                        email technologies, is user-friendly
+                                        and reliable. It seamlessly integrates with our CRM systems, enabling efficient
+                                        management of customer interactions.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12 -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">CL</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Chunic Limited
+                                </h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Logistics</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide2">
+                            <div class=" mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        Talkcoms Limited has been providing JCT Solutions, including call center and IP
+                                        telephony services, to our company.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">IS</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Imarisha Sacco
+                                </h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Finance</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide3">
+                            <div class=" mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        Talkcoms Limited has been providing ICT solutions, including CCTV, biometrics,
+                                        metal
+                                        detectors/scanners, communication
+                                        radios, and other security accessories, to our company.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">FH</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Patriotic Group
+                                </h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Security</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide4">
+                            <div class=" mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We highly recommend Talkcoms Limited. They developed a solution that enhanced
+                                        our
+                                        communication with customers across
+                                        all channels with a user-friendly interface, improving our efficiency and
+                                        reliability. We are confident in their
+                                        services.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">AE</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">East Africa
+                                    Customer Care Limited</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide5">
+                            <div class="mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        Talkcoms Limited has been providing ICT solutions to us, including the supply
+                                        and
+                                        delivery of toners, cartridges,
+                                        software, computers, printers, projectors, and networking accessories. They also
+                                        handle the repair and maintenance of
+                                        various ICT equipment. We are pleased to support their tender application.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">JC</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Jamiitech
+                                    Communications</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide6">
+                            <div class=" mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We have used the IT services of Talkcoms Limited on several occasions and highly
+                                        recommend them for their work. They
+                                        have consistently proven to be efficient and capable.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">RA</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Rivelco
+                                    Agrifoods
+                                    LTD</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Agriculture</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide7">
+                            <div class=" mt-16 w-full z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We highly recommend the services of Talkcoms Limited as providers of managed IT
+                                        and
+                                        support services. Since 2016,
+                                        Talkcoms has helped us set up and scale our IT infrastructure. They are
+                                        professional, fair, and timely, often going out
+                                        of their way to provide sustainable solutions.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">SEA</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Snetor East
+                                    Africa
+                                    Limited</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Manufacturing</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile version -->
+                <div class="block lg:hidden">
+
+                    <div id="mobile-keen-slider" class="keen-slider ">
+                        <div class="keen-slider__slide number-slide1">
+                            <div class="mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We highly recommend Talkcoms Limited. For three years, their exceptional support
+                                        and
+                                        technical expertise have been
+                                        invaluable. Their integrated call center solution, combining CRM, social media,
+                                        and
+                                        email technologies, is user-friendly
+                                        and reliable. It seamlessly integrates with our CRM systems, enabling efficient
+                                        management of customer interactions.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12 -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">CL</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Chunic Limited
+                                </h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Logistics</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide2">
+                            <div class=" mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        Talkcoms Limited has been providing JCT Solutions, including call center and IP
+                                        telephony services, to our company.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">IS</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Imarisha Sacco
+                                </h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Finance</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide3">
+                            <div class=" mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        Talkcoms Limited has been providing ICT solutions, including CCTV, biometrics,
+                                        metal
+                                        detectors/scanners, communication
+                                        radios, and other security accessories, to our company.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">FH</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Patriotic Group
+                                </h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Security</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide4">
+                            <div class=" mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We highly recommend Talkcoms Limited. They developed a solution that enhanced
+                                        our
+                                        communication with customers across
+                                        all channels with a user-friendly interface, improving our efficiency and
+                                        reliability. We are confident in their
+                                        services.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">AE</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">East Africa
+                                    Customer Care Limited</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide5">
+                            <div class="mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        Talkcoms Limited has been providing ICT solutions to us, including the supply
+                                        and
+                                        delivery of toners, cartridges,
+                                        software, computers, printers, projectors, and networking accessories. They also
+                                        handle the repair and maintenance of
+                                        various ICT equipment. We are pleased to support their tender application.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">JC</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Jamiitech
+                                    Communications</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide6">
+                            <div class=" mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We have used the IT services of Talkcoms Limited on several occasions and highly
+                                        recommend them for their work. They
+                                        have consistently proven to be efficient and capable.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">RA</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Rivelco
+                                    Agrifoods
+                                    LTD</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Agriculture</h1>
+                            </div>
+                        </div>
+                        <div class="keen-slider__slide number-slide7">
+                            <div class=" mt-16 p-2 z-30 ">
+                                <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
+                                    <p class="text-gray-500 mb-12 mt-4">
+                                        We highly recommend the services of Talkcoms Limited as providers of managed IT
+                                        and
+                                        support services. Since 2016,
+                                        Talkcoms has helped us set up and scale our IT infrastructure. They are
+                                        professional, fair, and timely, often going out
+                                        of their way to provide sustainable solutions.
+                                    </p>
+                                    <div
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
+                                        <h1 class="text-4xl font-bold text-blue-950">SEA</h1>
+                                    </div>
+
+                                </div>
+                                <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Snetor East
+                                    Africa
+                                    Limited</h1>
+                                <h1 class=" text-white text-xl text-center font-regular">Manufacturing</h1>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
-                <div id="my-keen-slider" class="keen-slider">
-                    <div class="keen-slider__slide number-slide1">
-                        <div class=" mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    We highly recommend Talkcoms Limited. For three years, their exceptional support and
-                                    technical expertise have been
-                                    invaluable. Their integrated call center solution, combining CRM, social media, and
-                                    email technologies, is user-friendly
-                                    and reliable. It seamlessly integrates with our CRM systems, enabling efficient
-                                    management of customer interactions.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12 -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">CL</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Chunic Limited</h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Logistics</h1>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide2">
-                        <div class=" mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    Talkcoms Limited has been providing JCT Solutions, including call center and IP
-                                    telephony services, to our company.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">IS</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Imarisha Sacco</h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Finance</h1>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide3">
-                        <div class=" mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    Talkcoms Limited has been providing ICT solutions, including CCTV, biometrics, metal
-                                    detectors/scanners, communication
-                                    radios, and other security accessories, to our company.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">FH</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Patriotic Group
-                            </h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Security</h1>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide4">
-                        <div class=" mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    We highly recommend Talkcoms Limited. They developed a solution that enhanced our
-                                    communication with customers across
-                                    all channels with a user-friendly interface, improving our efficiency and
-                                    reliability. We are confident in their
-                                    services.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">AE</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">East Africa
-                                Customer Care Limited</h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide5">
-                        <div class="mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    Talkcoms Limited has been providing ICT solutions to us, including the supply and
-                                    delivery of toners, cartridges,
-                                    software, computers, printers, projectors, and networking accessories. They also
-                                    handle the repair and maintenance of
-                                    various ICT equipment. We are pleased to support their tender application.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">JC</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Jamiitech
-                                Communications</h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Communication</h1>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide6">
-                        <div class=" mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    We have used the IT services of Talkcoms Limited on several occasions and highly
-                                    recommend them for their work. They
-                                    have consistently proven to be efficient and capable.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">RA</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Rivelco Agrifoods
-                                LTD</h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Agriculture</h1>
-                        </div>
-                    </div>
-                    <div class="keen-slider__slide number-slide7">
-                        <div class=" mt-16 w-full z-30 ">
-                            <div class="rounded-2xl  bg-white p-8  text-center min-h-80 relative">
-                                <p class="text-gray-500 mb-12 mt-4">
-                                    We highly recommend the services of Talkcoms Limited as providers of managed IT and
-                                    support services. Since 2016,
-                                    Talkcoms has helped us set up and scale our IT infrastructure. They are
-                                    professional, fair, and timely, often going out
-                                    of their way to provide sustainable solutions.
-                                </p>
-                                <div
-                                    class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
-                                    <h1 class="text-4xl font-bold text-blue-950">SEA</h1>
-                                </div>
-
-                            </div>
-                            <h1 class="mt-24 text-white text-xl text-center font-semibold leading-8">Snetor East Africa
-                                Limited</h1>
-                            <h1 class=" text-white text-xl text-center font-regular">Manufacturing</h1>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
 
         <!-- FAQ -->
-        <div class="container p-24 m-auto">
-            <div class="mx-32">
-                <h1 class="font-boldlg:text-5xl text-2xl text-blue-900 mb-10">FAQ's</h1>
+        <div class="container sm:p-24 mt-10 m-auto lg:block hidden">
+            <div class="lg:mx-32">
+                <h1 class="font-boldlg:text-5xl text-2xl text-blue-900 mb-10 text-center lg:text-left">FAQ's</h1>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="grid gap-y-4">
                         <div id="faq-1" class="faq rounded-lg border select-faq cursor-pointer p-4">
@@ -852,6 +1054,158 @@
             </div>
         </div>
 
+        <!-- FAQ Mobile -->
+        <div class="container sm:p-24 mt-10 m-auto md:hidden block">
+            <div class="">
+                <h1 class="font-boldlg:text-5xl text-2xl text-blue-900 mb-10 text-center lg:text-left">FAQ's</h1>
+                <div id="accordion-collapse" data-accordion="collapse"
+                    data-active-classes="bg-blue-50 text-[#0D80BA] font-bold" class=" p-4">
+                    <div class="grid gap-y-4">
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq001" aria-expanded="true" aria-controls="#faq001"
+                                class=" rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600">
+                                    1.What is the Talkcoms CC?
+                                </p>
+                            </button>
+                            <ul id="faq001" class="faqs text-gray-600 space-y-1 text-left p-4 hidden"
+                                style="list-style-type: circle;">
+                                Talkcoms
+                                Contact Center (CC) is a powerful and feature-rich software solution that
+                                helps businesses achieve customer service excellence throughout the customer
+                                journey. It is designed to meet the needs of today's customers and the demands of
+                                tomorrow's business. With its omnichannel feature, Talkcoms CC enables enterprises
+                                to deliver exceptional customer service
+
+                            </ul>
+                        </div>
+
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq002" aria-expanded="true" aria-controls="#faq002"
+                                class="rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600 text-left">2.What are the key features of Talkcoms CC?
+                                </p>
+                            </button>
+                            <ul id="faq002" class="faqs text-gray-600 space-y-1 text-left px-8 hidden"
+                                style="list-style-type: circle;">
+                                <li>Omni channel Communications Solutions
+                                    TalkcomsCC Omni channel allows your customers to contact you using their preferred
+                                    method of communication.</li>
+                                <li>
+                                    Multi-level IVR
+                                    Multi-level IVR is an automated phone system that acts as an auto-receptionist by
+                                    31
+                                    offering self-help features.
+                                </li>
+                                <li>
+                                    Multi-level IVR
+                                    Multi-level IVR is an automated phone system that acts as an auto-receptionist by
+                                    31
+                                    offering self-help features.
+                                </li>
+                                <li>
+                                    Call recording.
+                                    All calls are recorded, whether you are operating inbound or outbound call centers,
+                                </li>
+                                <li>
+                                    Real-time analytics and reporting.
+                                </li>
+                                <li>
+
+                                    Our Contact Center system's real-time analytics and reports help you gain insights
+                                    about the overall business operations. Get reports for agent activity and call logs.
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq003" aria-expanded="true" aria-controls="#faq003"
+                                class="rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600 text-left">3.What are the requirements to operate the Call
+                                    Center System?
+                                </p>
+                            </button>
+                            <ul id="faq003" class="faqs text-gray-600 space-y-1 text-left px-8 hidden"
+                                style="list-style-type: circle;">
+                                <p class="font-semibold">To operate Talkcoms Contact Center, you will need the
+                                    following:
+                                </p>
+                                <li>A laptop or desktop computer with a minimum of Core i3 processor and 8GB of RAM</li>
+                                <li> A headset with a microphone</li>
+                                <li> A stable internet connection.</li>
+                            </ul>
+                        </div>
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq004" aria-expanded="true" aria-controls="#faq004"
+                                class="rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600 text-left">4.What type of companies does Talkcoms Contact Center
+                                    serve?
+                                </p>
+                            </button>
+                            <p id="faq004" id="faq04" class="faqs text-gray-600 hidden p-4">
+                                Talkcoms Contact Center is suitable for companies of all sizes. We customize our
+                                services to fit the unique requirements of both small and large enterprises.
+                            </p>
+                        </div>
+
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq005" aria-expanded="true" aria-controls="#faq005"
+                                class="rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600 text-left">5.How many languages does the Contact Center system
+                                    support?
+                                </p>
+                            </button>
+                            <p id="faq005" id="faq005" class="faqs text-gray-600 hidden p-4">
+                                CC supports the following languages: Afrikaans, Cambodian, English, French, German,
+                                Spanish, Arabic, and Hindi. More as well.
+                            </p>
+                        </div>
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq006" aria-expanded="true" aria-controls="#faq006"
+                                class="rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600 text-left">6.How does Talkcoms ensure the security of my Data?
+                                </p>
+                            </button>
+                            <p id="faq006" id="faq006" class="faqs text-gray-600 hidden p-4">
+                                At Talkcoms, we take data security very seriously. We fully comply with the General
+                                Data Protection Regulation (GDPR) and have implemented strict security measures to
+                                protect our customers' data. A secure firewall protects our servers, and only authorized
+                                personnel are granted access.
+                            </p>
+                        </div>
+                        <div class="faq rounded-xl border ">
+
+                            <button data-accordion-target="#faq007" aria-expanded="true" aria-controls="#faq007"
+                                class="rounded-lg cursor-pointer p-4 flex items-center w-full bg-transparent">
+                                <p class="text-gray-600 text-left">7.What are the hours of operation for the Talkcoms
+                                    Help desk?
+                                </p>
+                            </button>
+                            <p id="faq007" id="faq005" class="faqs text-gray-600 hidden p-4">
+                                Our help desk is available during the following hours:
+                                Weekdays: 8:00 am to 5:00 pm EAT.
+                                Saturday: 8:00 am to 12:00 pm EAT.
+                            </p>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
 
         <!-- Footer -->
         <div class="bg-gray-50 lg:px-36 lg:py-16">
@@ -862,7 +1216,7 @@
 
             <div class="lg:grid gap-y-8  lg:grid-cols-4 my-10 p-4 lg:p-0 flex flex-wrap">
                 <div class="my-2 lg:my-0">
-                    <img class="h-24 w-auto my-4" src="./images/logo.png" alt="" srcset="">
+                    <img class="h-24 w-auto my-4" src="/images/logo.svg" alt="" srcset="">
                     <p class="text-gray-500 font-normal ">
                         We are well known for being the best communication and
                         collaboration provider.
@@ -1044,7 +1398,12 @@
     <script src="/js/flowbite.min.js"></script>
     <script src="/js/jquery.js"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/products.js"></script>
     <script src="/js/init-slier.js"></script>
+    <script>
+        var mobileslider = new KeenSlider("#mobile-keen-slider")
+    </script>
+
 </body>
 
 </html>

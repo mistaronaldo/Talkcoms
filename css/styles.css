@@ -224,4 +224,10 @@ body {
             justify-content: center;
         }
     }
+
+    .bg-setup-grad {
+
+        background: linear-gradient(241.33deg, #8AC440 -11.33%, #0D80BA 22.29%);
+        border-radius: 12px;
+    }
 }

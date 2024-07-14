@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="bg-white">
+    <div class="bg-white overflow-hidden">
         <header class="absolute inset-x-0 top-0 z-50 ">
 
             <nav class="">
@@ -171,9 +171,9 @@
 
 
         </header>
-        <div class="relative isolate px-6 pt-24 md:pt-14 lg:px-8 ">
+        <div class="relative isolate px-2 pt-24 md:pt-14 lg:px-8 ">
 
-            <div class="absolute inset-r-0 -top-52  rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl "
+            <div class="absolute inset-r-0 -top-52 max-sm:w-full rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl "
                 aria-hidden="true">
                 <div
                     class="relative left-[calc(80%)] aspect-[1155/678] w-[106.125rem] -translate-x-1/2 rotate-[157deg] bg-gradient-to-tr from-[#0d80ba6b] to-[#0D80BA] opacity-20 ">
@@ -182,13 +182,17 @@
 
 
 
-            <div class="text-center mx-auto relative p-24 lg:mt-28 container h-1/6 bg-g-started rounded-2xl ">
+            <div
+                class="text-center mx-auto relative lg:p-24 py-6 px-4 lg:mt-28 container h-1/6 bg-g-started rounded-2xl ">
 
-                <h1 class="text-white text-6xl font-bold my-16 mt-8">Get Started</h1>
-                <p class="font-light lg:px-[25rem] text-white my-8  ">Drop us a message or contact us directly via
+                <h1 class="text-white text-6xl max-sm:text-5xl font-bold my-16 mt-8">Get Started</h1>
+                <p class="font-light lg:px-[25rem] text-white my-8 max-sm:text-sm">Drop us a message or contact us
+                    directly via
                     our phone numbers below.</p>
-                <img class="absolute w-1/12 left-8 -bottom-16" src="/images/home/dots.png" alt="" srcset="">
-                <img class="absolute w-2/12 top-0 -right-24" src="/images/home/tribal.png" alt="" srcset="">
+                <img class="max-sm:hidden absolute w-1/12 left-8 -bottom-16" src="/images/home/dots.png" alt=""
+                    srcset="">
+                <img class="max-sm:hidden absolute w-2/12 top-0 -right-24" src="/images/home/tribal.png" alt=""
+                    srcset="">
             </div>
 
 
@@ -207,13 +211,13 @@
 
 
         <div class=" mx-auto  lg:px-24 px-4 container z-10 relative">
-            <div class="px-20 my-14">
+            <div class="lg:px-20 my-14">
 
 
 
                 <div>
                     <form action="#" method="POST" class="mx-auto mt-16 max-w-4xl sm:mt-20">
-                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-3">
+                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3">
                             <div>
                                 <label for="first-name"
                                     class="block text-sm font-semibold leading-6 text-gray-900">First
@@ -253,7 +257,7 @@
                             </div>
 
                         </div>
-                        <div class="mt-10 w-1/5">
+                        <div class="mt-10 lg:w-1/5">
                             <button type="submit"
                                 class="text-md bg-talkgreen h-16 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5">Submit
                             </button>
@@ -266,11 +270,12 @@
         </div>
 
 
-        <div class="mx-auto p-24  container">
+        <div class="mx-auto lg:p-24  container">
             <div class="text-center">
 
 
-                <h1 class="text-5xl text-blue-900 font-bold self-center text-center mt-32 mb-20">Our Global Presence
+                <h1 class="lg:text-5xl text-2xl text-blue-900 font-bold self-center text-center mt-32 mb-20">Our Global
+                    Presence
                 </h1>
                 <div>
                     <img class="w-full" src="/images/map.png" alt="" srcset="">
@@ -283,20 +288,22 @@
 
 
         <!-- Footer -->
-        <div class="bg-gray-50 px-36 py-16">
-            <p class="text-sm font-semibold text-gray-500 leading-8 text-right">Copyright © 2022 All Rights</p>
-            <hr>
+        <div class="bg-gray-50 lg:px-36 lg:py-16">
+            <p class="text-sm font-semibold text-gray-500 leading-8 p-2 lg:p-0 text-right hidden lg:block">Copyright ©
+                2022 All Rights
+            </p>
+            <hr class="my-10 lg:my-0">
 
-            <div class="grid grid-cols-4 my-10">
-                <div>
-                    <img class="h-24 w-auto" src="./images/logo.png" alt="" srcset="">
-                    <p class="text-gray-500 font-normal py-12">
+            <div class="lg:grid gap-y-8  lg:grid-cols-4 my-10 p-4 lg:p-0 flex flex-wrap">
+                <div class="my-2 lg:my-0">
+                    <img class="h-24 w-auto my-4" src="/images/logo.svg" alt="" srcset="">
+                    <p class="text-gray-500 font-normal ">
                         We are well known for being the best communication and
                         collaboration provider.
                     </p>
                 </div>
-                <div>
-                    <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Company</h1>
+                <div class="my-2 lg:my-0 w-full">
+                    <h1 class="text-[#69A71A] font-semibold leading-10 text-xl ">Company</h1>
 
                     <div class="block">
                         <a class="block text-gray-500" href="/about-us.html">About Us</a>
@@ -305,17 +312,17 @@
                         <a class="block text-gray-500" href="">Terms of Use</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Product</h1>
 
                     <div class="">
                         <a class="block text-gray-500" href="#">Features</a>
                         <a class="block text-gray-500" href="#">Pricing</a>
                         <a class="block text-gray-500" href="">Download Profile</a>
-                        <a href="">Terms of Use</a>
+                        <a class="block text-gray-500" href="">Terms of Use</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Connect With Us</h1>
                     <a href="">
                         <img class="h-10" src="./images/socials.png" alt="" srcset="">
@@ -324,7 +331,7 @@
 
 
                 <!-- Second Row -->
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">United Kingdom</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         The Kings Centre Main Road
@@ -332,7 +339,7 @@
                         United Kingdom.
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Nairobi</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         1st Floor
@@ -342,13 +349,13 @@
                         NAIROBI.
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Eldama Ravine</h1>
                     <p class="text-gray-500 font-normal leading-8">
                         3rd Floor, Skyrise Plaza, Eldama Ravine Township, Along Ravine - Nakuru Road
                     </p>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Quick Links</h1>
                     <div class="">
                         <a class="block text-gray-500" href="/services/outsourced.html">Call Centre</a>
@@ -358,7 +365,7 @@
                         <a class="block text-gray-500" href="/integration/zoho.html">Zoho Workspace</a>
                     </div>
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <a href="tel:+447538816037">
 
                         <div class="flex items-center gap-4">
@@ -387,7 +394,7 @@
                     </a>
 
                 </div>
-                <div>
+                <div class="my-2 lg:my-0 w-full">
                     <a href="tel:+254747039334">
                         <div class="flex items-center gap-4">
                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
@@ -415,7 +422,7 @@
                     </a>
 
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-2 ">
                     <a href="mailto:solutions@talkcoms.io">
 
                         <div class="flex items-center gap-4">
@@ -428,6 +435,11 @@
 
                 </div>
             </div>
+            <hr class="lg:hidden">
+            <p class="text-sm font-semibold text-gray-500 mb-10 leading-8 p-2 lg:p-0 text-center lg:hidden block ">
+                Copyright ©
+                2022 All Rights
+            </p>
         </div>
     </div>
 

@@ -173,11 +173,11 @@
 
         </header>
 
-        <img class="w-full pt-24 sm:hidden" src="/images/mobile/landingbro.png" alt="" srcset="">
+        <img class="w-full pt-24 lg:hidden" src="/images/mobile/landingbro.png" alt="" srcset="">
 
         <div class="relative isolate px-6 sm:pt-24 md:pt-14 lg:px-8 overflow-x-clip">
 
-            <div class="hidden sm:block absolute inset-r-0 -top-52  rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl w-full"
+            <div class="hidden sm:block absolute inset-r-0 -top-52 max-sm:w-full rounded-l-full -z-10 transform-gpu overflow-hidden blur-3xl w-full"
                 aria-hidden="true">
                 <div
                     class="relative left-[calc(100%)] aspect-[1155/678] w-[106.125rem] -translate-x-1/2 rotate-[157deg] bg-gradient-to-tr from-[#0d80ba6b] to-[#0D80BA] opacity-30 ">
@@ -978,8 +978,8 @@
                             class="slide-track mt-10 lg:grid lg:mx-20 lg:grid-cols-8  lg:px-24 px-4 gap-5 lg:gap-4 lg:justify-content-center ">
 
                             <div class="slide">
-                                <img class="logo  lg:w-auto m-auto" src="./images/brands/Chunik Logo 1.png" alt=""
-                                    srcset="">
+                                <img class="logo max-sm:p-2 lg:w-auto m-auto" src="./images/brands/Chunik Logo 1.png"
+                                    alt="" srcset="">
                             </div>
                             <div class="slide">
                                 <img class="logo h-14 lg:w-auto" src="./images/brands/image 2-removebg-preview 1.png"
@@ -992,9 +992,7 @@
                                 <img class="logo h-14 lg:w-auto m-auto" src="./images/brands/image 6.png" alt=""
                                     srcset="">
                             </div>
-                            <div class="slide">
 
-                            </div>
                             <div class="slide"> <img class="logo h-14 lg:h-full lg:px-2 lg:-mt-1 lg:w-auto m-auto"
                                     src="./images/brands/Layer_1.png" alt="" srcset="">
                             </div>
@@ -1010,37 +1008,36 @@
                                     src="./images/brands/image 8.png" alt="" srcset="">
 
                             </div>
-                            <div class="slide">
-                                <img class="logo  lg:w-auto m-auto" src="./images/brands/Chunik Logo 1.png" alt=""
-                                    srcset="">
+                            <div class="slide lg:hidden">
+                                <img class="logo max-sm:p-2 lg:w-auto m-auto" src="./images/brands/Chunik Logo 1.png"
+                                    alt="" srcset="">
                             </div>
-                            <div class="slide">
+                            <div class="slide lg:hidden">
                                 <img class="logo h-14 lg:w-auto" src="./images/brands/image 2-removebg-preview 1.png"
                                     alt="" srcset="">
                             </div>
-                            <div class="slide">
+                            <div class="slide lg:hidden">
                                 <img class="logo h-14 lg:w-auto m-auto" src="./images/brands/coop.png" alt="" srcset="">
                             </div>
-                            <div class="slide">
+                            <div class="slide lg:hidden">
                                 <img class="logo h-14 lg:w-auto m-auto" src="./images/brands/image 6.png" alt=""
                                     srcset="">
                             </div>
-                            <div class="slide">
 
-                            </div>
-                            <div class="slide"> <img class="logo h-14 lg:h-full lg:px-2 lg:-mt-1 lg:w-auto m-auto"
+                            <div class="slide lg:hidden"> <img
+                                    class="logo h-14 lg:h-full lg:px-2 lg:-mt-1 lg:w-auto m-auto"
                                     src="./images/brands/Layer_1.png" alt="" srcset="">
                             </div>
-                            <div class="slide">
+                            <div class="slide lg:hidden">
                                 <img class="logo h-14 lg:w-auto m-auto" src="./images/brands/TKDM-Logo-red 1.png" alt=""
                                     srcset="">
                             </div>
-                            <div class="slide">
+                            <div class="slide lg:hidden">
                                 <img class="logo h-14 lg:w-auto m-auto" src="./images/brands/image 7.png" alt=""
                                     srcset="">
 
                             </div>
-                            <div class="slide"> <img class="logo h-14 lg:w-auto m-auto"
+                            <div class="slide lg:hidden"> <img class="logo h-14 lg:w-auto m-auto"
                                     src="./images/brands/image 8.png" alt="" srcset="">
 
                             </div>
@@ -1308,7 +1305,7 @@
                             </div>
 
                         </div>
-                        <div class="mt-10 lg:w-1/5">
+                        <div class="mt-10 lg:lg:w-1/5">
                             <button type="submit"
                                 class="text-md bg-talkgreen h-16 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5">Submit
                             </button>
@@ -1319,6 +1316,9 @@
 
 
         </div>
+
+
+
         <div class="lg:p-10 bg-bluelight-gradient relative rounded-2xl">
             <div class="absolute h-full inset-0 w-full lg:px-40 transform-gpu overflow-hidden " aria-hidden="true">
                 <div class=" relative rounded-full h-full   bg-circle-grad opacity-10 ">
@@ -1909,6 +1909,8 @@
             </div>
         </div>
 
+
+
         <!-- Footer -->
         <div class="bg-gray-50 lg:px-36 lg:py-16">
             <p class="text-sm font-semibold text-gray-500 leading-8 p-2 lg:p-0 text-right hidden lg:block">Copyright ©
@@ -1918,7 +1920,7 @@
 
             <div class="lg:grid gap-y-8  lg:grid-cols-4 my-10 p-4 lg:p-0 flex flex-wrap">
                 <div class="my-2 lg:my-0">
-                    <img class="h-24 w-auto my-4" src="./images/logo.png" alt="" srcset="">
+                    <img class="h-24 w-auto my-4" src="/images/logo.svg" alt="" srcset="">
                     <p class="text-gray-500 font-normal ">
                         We are well known for being the best communication and
                         collaboration provider.
