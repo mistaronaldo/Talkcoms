@@ -144,6 +144,9 @@ body {
     border-radius: 18px;
 }
 
+a {
+    cursor: pointer;
+}
 
 .testimonial-left {
     margin-right: -2rem;

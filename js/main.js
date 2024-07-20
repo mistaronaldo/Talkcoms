@@ -119,7 +119,6 @@ $(document).ready(function () {
     if (screenWidth >= 640) {
         hideAll();
         $('#dot-outsourced').addClass('dot-selected');
-
         $('#select-outsourced').on('mouseenter', function () {
             hideAll(0);
             $('#select-outsourced').addClass('sect-selected');
@@ -163,4 +162,12 @@ $(document).ready(function () {
 });
 
 
+$(document).ready(function () {
+    $('.book-demo').click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#get-started').offset().top
+        }, 1000); // Adjust animation time (optional)
 
+    });
+});
