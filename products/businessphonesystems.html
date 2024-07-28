@@ -1639,9 +1639,24 @@
             <div class="rounded-xl bg-white lg:w-1/4 lg:m-auto m-5 w-full  text-center relative">
 
                 <div class="w-full px-4 text-xl font-semibold text-gray-700 bg-green-50 p-4 rounded-t-xl">
-                    <h1>Success!</h1>
+                    <h1>Thank you!</h1>
                 </div>
-                <h1 class="my-4">Thank you for your feedback</h1>
+                <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                    viewBox="0 0 100 100">
+                    <circle cx="52" cy="52" r="44" opacity=".35"></circle>
+                    <circle cx="50" cy="50" r="44" fill="#f2f2f2"></circle>
+                    <path fill="#f2f2f2"
+                        d="M50,91C27.393,91,9,72.607,9,50S27.393,9,50,9s41,18.393,41,41S72.607,91,50,91z"></path>
+                    <circle cx="50.026" cy="50.026" r="38.026" fill="#96c362"></circle>
+                    <circle cx="50" cy="50" r="37.5" fill="none" stroke="#40396e" stroke-miterlimit="10"
+                        stroke-width="3"></circle>
+                    <g>
+                        <path fill="#f2f2f2"
+                            d="M42.017,65c-0.767,0-1.534-0.292-2.119-0.877l-10.017-10c-1.173-1.17-1.175-3.07-0.004-4.243 c1.17-1.173,3.07-1.175,4.242-0.003l7.896,7.882l23.881-23.88c1.172-1.172,3.07-1.172,4.242,0c1.172,1.171,1.172,3.071,0,4.242 l-26,26C43.552,64.707,42.784,65,42.017,65z">
+                        </path>
+                    </g>
+                </svg>
+                <h1 class="my-4">Form submitted successfully.</h1>
 
                 <button
                     class="py-2 mb-4 rounded-full hover:bg-gray-50 hover:border-gray-50 transition px-3 border close-modal max-sm:text-sm">Close</button>
@@ -1651,16 +1666,30 @@
 
     </div>
     <div id="failure" aria-labelledby="modal-title" aria-modal="true" role="dialog"
-        class="modal hidden fixed inset-0 w-full overflow-y-auto transition-all backdrop-blur-sm backdrop-brightness-50 h-full "
+        class="modal  fixed inset-0 w-full overflow-y-auto transition-all backdrop-blur-sm backdrop-brightness-50 h-full "
         style="z-index: 3000;">
 
         <div class="flex h-full items-center justify-center">
             <div class="rounded-xl bg-white lg:w-1/4 lg:m-auto m-5 w-full  text-center relative">
 
                 <div class="w-full px-4 text-xl font-semibold text-gray-700 bg-red-50 p-4 rounded-t-xl">
-                    <h1>Failure!</h1>
+                    <h1>Oops! Something went wrong.</h1>
                 </div>
-                <h1 class="my-4">Couldn't send your message</h1>
+                <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+                    viewBox="0 0 100 100">
+                    <circle cx="52" cy="52" r="44" opacity=".35"></circle>
+                    <circle cx="50" cy="50" r="44" fill="#f2f2f2"></circle>
+                    <path fill="#f2f2f2"
+                        d="M50,91C27.393,91,9,72.607,9,50S27.393,9,50,9s41,18.393,41,41S72.607,91,50,91z"></path>
+                    <circle cx="50.026" cy="50.026" r="38.026" fill="#ff7575"></circle>
+                    <circle cx="50" cy="50" r="37.5" fill="none" stroke="#40396e" stroke-miterlimit="10"
+                        stroke-width="3"></circle>
+                    <line x1="35.858" x2="64.142" y1="35.858" y2="64.142" fill="none" stroke="#fff"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"></line>
+                    <line x1="64.142" x2="35.858" y1="35.858" y2="64.142" fill="none" stroke="#fff"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="6"></line>
+                </svg>
+                <h1 class="my-4">There was an error submitting your form. Please try again later.</h1>
                 <button
                     class="py-2 mb-4 rounded-full hover:bg-gray-50 hover:border-gray-50 transition px-3 border close-modal max-sm:text-sm">Close</button>
             </div>
