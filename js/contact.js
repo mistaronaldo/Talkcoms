@@ -15,7 +15,6 @@ $(document).ready(function () {
         var appointment_date = $('#block-date').val();
         var appointment_time = $('#block-time').val();
 
-        alert(service);
 
 
         var settings = {
