@@ -43,13 +43,13 @@
                                 data-dropdown-placement="bottom-start">Products
                             </button>
                             <div id="dropdownNavbar"
-                                class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow max-w-2xl">
+                                class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow-xl max-w-2xl">
                                 <div class="border-b p-6">
                                     <h1 class="text-gray-200 text-4xl font-normal">Products</h1>
                                 </div>
 
 
-                                <ul class="grid grid-cols-2 gap-y-4 py-2 pb-10 text-sm text-gray-700  "
+                                <ul class="grid lg:grid-cols-2 gap-y-4 py-2 pb-10 text-sm text-gray-700  "
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
                                         <a href="/products/omnichannel.html"
@@ -71,7 +71,7 @@
                                     </li>
                                     <li>
                                         <a href="/products/erp.html"
-                                            class="block px-4 py-2 text-[#0D80BA] hover:bg-gray-100 ">Enterprise
+                                            class="block px-4 py-2 text-[#0D80BA] hover:bg-gray-100 bg-blue-50">Enterprise
                                             Resource
                                             Planning System</a>
 
@@ -654,22 +654,23 @@
 
 
                 <div>
-                    <form action="#" method="POST" class="mx-auto mt-16 max-w-4xl sm:mt-20">
+                    <form id="get-started" class="mx-auto mt-16 max-w-4xl sm:mt-20">
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                             <div>
                                 <label for="first-name"
                                     class="block text-sm font-semibold leading-6 text-gray-900">First
                                     name <span class="text-red-500">*</span></label>
                                 <div class="mt-2.5">
-                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
-                                        class="sm:text-sm sm:leading-6 h-16 md:text-xl font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 ">
+                                    <input type="text" required name="first-name" id="first-name"
+                                        autocomplete="given-name"
+                                        class="required sm:text-sm sm:leading-6 h-16 md:text-xl font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 ">
                                 </div>
                             </div>
                             <div>
                                 <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email
                                     <span class="text-red-500">*</span></label>
                                 <div class="mt-2.5">
-                                    <input type="text" name="email" id="email" autocomplete="family-name"
+                                    <input type="email" required name="email" id="email" autocomplete="family-name"
                                         class="block h-16 md:text-xl font-light w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 </div>
                             </div>
@@ -677,7 +678,7 @@
                                 <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company
                                     Name</label>
                                 <div class="mt-2.5">
-                                    <input type="text" name="company" id="company" autocomplete="organization"
+                                    <input type="text" required name="company" id="company" autocomplete="organization"
                                         class="h-16 md:text-xl font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 </div>
                             </div>
@@ -687,9 +688,11 @@
                                     <span class="text-red-500">*</span>
                                 </label>
                                 <div class="mt-2.5 grid grid-cols-2 gap-4">
-                                    <input type="date" name="company" id="company" autocomplete="organization"
+                                    <input type="date" required name="company" id="block-date"
+                                        autocomplete="organization"
                                         class="h-16 md:text-lg font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-transparent">
-                                    <input type="time" name="company" id="company" autocomplete="organization"
+                                    <input type="time" required name="company" id="block-time"
+                                        autocomplete="organization"
                                         class="h-16 md:text-lg font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-transparent">
 
                                 </div>
@@ -700,17 +703,28 @@
                                 <label for="message"
                                     class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
                                 <div class="mt-2.5">
-                                    <textarea name="message" id="message" rows="4"
+                                    <textarea required name="message" id="message" rows="4"
                                         class="md:text-lg font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                                 </div>
                             </div>
-
-
-
+                            <div class="hidden">
+                                <input type="text" hidden id="service"
+                                    value="Enterprise Resource Planning System (ERP)">
+                            </div>
                         </div>
-                        <div class="mt-10 lg:w-1/5">
+                        <div class="mt-10 lg:w-3/12">
                             <button type="submit"
-                                class="text-md bg-talkgreen h-16 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5">Submit
+                                class="text-md bg-talkgreen h-16 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5 transition-all">Submit
+                                <div class="spinner hidden"><svg aria-hidden="true"
+                                        class="w-7 mx-4 h-8 text-white animate-spin  fill-blue-600"
+                                        viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                            fill="currentColor" />
+                                        <path
+                                            d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                            fill="currentFill" />
+                                    </svg></div>
                             </button>
                         </div>
                     </form>
@@ -749,7 +763,7 @@
                                         management of customer interactions.
                                     </p>
                                     <div
-                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12 -bottom-12">
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
                                         <h1 class="text-4xl font-bold text-blue-950">CL</h1>
                                     </div>
 
@@ -905,7 +919,7 @@
                                         management of customer interactions.
                                     </p>
                                     <div
-                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12 -bottom-12">
+                                        class="w-24 h-24 bg-white rounded-full m-auto absolute left-1/2  -translate-x-1/2 flex items-center justify-center border -bottom-12">
                                         <h1 class="text-4xl font-bold text-blue-950">CL</h1>
                                     </div>
 
@@ -1351,9 +1365,20 @@
                 </div>
                 <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Connect With Us</h1>
-                    <a href="">
-                        <img class="h-10" src="./images/socials.png" alt="" srcset="">
-                    </a>
+                    <div class="grid grid-cols-4 gap-4">
+                        <a href="https://www.instagram.com/talkcoms/">
+                            <img class="h-10" src="/images/socials-ig.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.facebook.com/talkcoms.co.uk">
+                            <img class="h-10" src="/images/socials-fb.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.linkedin.com/company/talkcoms-ltd/">
+                            <img class="h-10" src="/images/socials-lin.png" alt="" srcset="">
+                        </a>
+                        <a href="">
+                            <img class="h-10" src="/images/socials-x.png" alt="" srcset="">
+                        </a>
+                    </div>
                 </div>
 
 
@@ -1474,7 +1499,7 @@
 
 
     <!-- Live CHAT -->
-    <div style="z-index: 5000000;" class="fixed bottom-10 right-10 ">
+    <div style="z-index: 2000;" class="fixed bottom-10 right-10 ">
         <div class="text-center">
             <h1 class="text-blue-950 text-sm font-semibold">Live Chat</h1>
             <a class="" href="">
@@ -1500,6 +1525,45 @@
 
 
 
+    <!-- Submit message -->
+    <div id="success" aria-labelledby="modal-title" aria-modal="true" role="dialog"
+        class="modal hidden fixed inset-0 overflow-y-auto transition-all  w-full backdrop-blur-sm backdrop-brightness-50 h-screen"
+        style="z-index: 3000;">
+        <div class="flex items-center  h-full justify-center">
+            <div class="rounded-xl bg-white lg:w-1/4 lg:m-auto m-5 w-full  text-center relative">
+
+                <div class="w-full px-4 text-xl font-semibold text-gray-700 bg-green-50 p-4 rounded-t-xl">
+                    <h1>Success!</h1>
+                </div>
+                <h1 class="my-4">Thank you for your feedback</h1>
+
+                <button
+                    class="py-2 mb-4 rounded-full hover:bg-gray-50 hover:border-gray-50 transition px-3 border close-modal max-sm:text-sm">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="failure" aria-labelledby="modal-title" aria-modal="true" role="dialog"
+        class="modal hidden fixed inset-0 w-full overflow-y-auto transition-all backdrop-blur-sm backdrop-brightness-50 h-full "
+        style="z-index: 3000;">
+
+        <div class="flex h-full items-center justify-center">
+            <div class="rounded-xl bg-white lg:w-1/4 lg:m-auto m-5 w-full  text-center relative">
+
+                <div class="w-full px-4 text-xl font-semibold text-gray-700 bg-red-50 p-4 rounded-t-xl">
+                    <h1>Failure!</h1>
+                </div>
+                <h1 class="my-4">Couldn't send your message</h1>
+                <button
+                    class="py-2 mb-4 rounded-full hover:bg-gray-50 hover:border-gray-50 transition px-3 border close-modal max-sm:text-sm">Close</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
 
 
     <script src="/js/keenslider.js"></script>
@@ -1511,7 +1575,7 @@
     <script>
         var mobileslider = new KeenSlider("#mobile-keen-slider")
     </script>
-
+    <script src="/js/contact.js"></script>
 </body>
 
 </html>

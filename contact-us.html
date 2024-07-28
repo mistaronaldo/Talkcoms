@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talkcoms : Conyact Us</title>
+    <title>Talkcoms : Contact Us</title>
     <link rel="icon" href="/images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,13 +43,13 @@
                                 data-dropdown-placement="bottom-start">Products
                             </button>
                             <div id="dropdownNavbar"
-                                class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow max-w-2xl">
+                                class="z-50 hidden ml-10 font-normal bg-white divide-y divide-gray-100 rounded-2xl shadow-xl max-w-2xl">
                                 <div class="border-b p-6">
                                     <h1 class="text-gray-200 text-4xl font-normal">Products</h1>
                                 </div>
 
 
-                                <ul class="grid grid-cols-2 gap-y-4 py-2 pb-10 text-sm text-gray-700  "
+                                <ul class="grid lg:grid-cols-2 gap-y-4 py-2 pb-10 text-sm text-gray-700  "
                                     aria-labelledby="dropdownLargeButton">
                                     <li>
                                         <a href="/products/omnichannel.html"
@@ -325,9 +325,20 @@
                 </div>
                 <div class="my-2 lg:my-0">
                     <h1 class="text-[#69A71A] font-semibold leading-10 text-xl">Connect With Us</h1>
-                    <a href="">
-                        <img class="h-10" src="./images/socials.png" alt="" srcset="">
-                    </a>
+                    <div class="grid grid-cols-4 gap-4">
+                        <a href="https://www.instagram.com/talkcoms/">
+                            <img class="h-10" src="/images/socials-ig.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.facebook.com/talkcoms.co.uk">
+                            <img class="h-10" src="/images/socials-fb.png" alt="" srcset="">
+                        </a>
+                        <a href="https://www.linkedin.com/company/talkcoms-ltd/">
+                            <img class="h-10" src="/images/socials-lin.png" alt="" srcset="">
+                        </a>
+                        <a href="">
+                            <img class="h-10" src="/images/socials-x.png" alt="" srcset="">
+                        </a>
+                    </div>
                 </div>
 
 
@@ -448,7 +459,7 @@
 
 
     <!-- Live CHAT -->
-    <div style="z-index: 5000000;" class="fixed bottom-10 right-10 ">
+    <div style="z-index: 2000;" class="fixed bottom-10 right-10 ">
         <div class="text-center">
             <h1 class="text-blue-950 text-sm font-semibold">Live Chat</h1>
             <a class="" href="">
@@ -470,6 +481,45 @@
 
             </a>
         </div>
+    </div>
+
+
+
+    <!-- Submit message -->
+    <div id="success" aria-labelledby="modal-title" aria-modal="true" role="dialog"
+        class="modal hidden fixed inset-0 overflow-y-auto transition-all  w-full backdrop-blur-sm backdrop-brightness-50 h-screen"
+        style="z-index: 3000;">
+        <div class="flex items-center  h-full justify-center">
+            <div class="rounded-xl bg-white lg:w-1/4 lg:m-auto m-5 w-full  text-center relative">
+
+                <div class="w-full px-4 text-xl font-semibold text-gray-700 bg-green-50 p-4 rounded-t-xl">
+                    <h1>Success!</h1>
+                </div>
+                <h1 class="my-4">Thank you for your feedback</h1>
+
+                <button
+                    class="py-2 mb-4 rounded-full hover:bg-gray-50 hover:border-gray-50 transition px-3 border close-modal max-sm:text-sm">Close</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="failure" aria-labelledby="modal-title" aria-modal="true" role="dialog"
+        class="modal hidden fixed inset-0 w-full overflow-y-auto transition-all backdrop-blur-sm backdrop-brightness-50 h-full "
+        style="z-index: 3000;">
+
+        <div class="flex h-full items-center justify-center">
+            <div class="rounded-xl bg-white lg:w-1/4 lg:m-auto m-5 w-full  text-center relative">
+
+                <div class="w-full px-4 text-xl font-semibold text-gray-700 bg-red-50 p-4 rounded-t-xl">
+                    <h1>Failure!</h1>
+                </div>
+                <h1 class="my-4">Couldn't send your message</h1>
+                <button
+                    class="py-2 mb-4 rounded-full hover:bg-gray-50 hover:border-gray-50 transition px-3 border close-modal max-sm:text-sm">Close</button>
+            </div>
+        </div>
+
     </div>
 
 
