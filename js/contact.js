@@ -53,4 +53,5 @@ $(document).ready(function () {
         $('.spinner').fadeOut();
         $('.modal').fadeOut(100);
     });
+    $('.modal').fadeOut(0);
 });
