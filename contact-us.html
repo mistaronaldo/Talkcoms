@@ -218,6 +218,15 @@
 
                 <div>
                     <form action="#" id="contact-us" method="POST" class="mx-auto mt-16 max-w-4xl sm:mt-20">
+
+                        <div id="plan-cont" class="lg:p-5  my-5 rounded-3xl bg-plan text-white text-center">
+                            <p class="text-xs">Please Submit Your Details For</p>
+                            <h1 id="plan" class="text-7xl font-bold my-10">CC Ultra Inquiry</h1>
+                            <h1 class="text-8xl font-bold non-ultra">$80</h1>
+                            <h1 class="text-xl non-ultra">Per Month</h1>
+                            <input type="hidden" name="plan" id="plans">
+                        </div>
+
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3">
                             <div>
                                 <label for="first-name"
@@ -559,6 +568,29 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/contact.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const plan = urlParams.get('plan');
+
+        if (plan) {
+            $('#plan-cont').fadeIn();
+            if (plan === 'basic') {
+                $('#plan').text('CC Basic Inquiry');
+            } else if (plan === 'ultra') {
+                $('#plan').text('CC Ultra Inquiry');
+                $('.non-ultra').fadeOut();
+            } else if (plan === 'advanced') {
+                $('#plan').text('CC Advanced Inquiry');
+            } else if (plan === 'plus') {
+                $('#plan').text('CC Plus Inquiry');
+            }
+
+
+
+        } else {
+            $('#plan-cont').fadeOut();
+        }
+    </script>
 </body>
 
 </html>
