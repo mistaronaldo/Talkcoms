@@ -227,11 +227,10 @@
                             <input type="hidden" name="plan" id="plans">
                         </div>
 
-                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3">
+                        <div class="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
                             <div>
-                                <label for="first-name"
-                                    class="block text-sm font-semibold leading-6 text-gray-900">First
-                                    name <span class="text-red-500">*</span></label>
+                                <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Full
+                                    Name <span class="text-red-500">*</span></label>
                                 <div class="mt-2.5">
                                     <input type="text" name="first-name" id="first-name" autocomplete="given-name"
                                         required
@@ -247,17 +246,40 @@
                                         class="bg-white block h-16 md:text-xl font-light w-full rounded-md border-0 px-3.5 py-2 required:focus:ring-red-300 focus:outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 </div>
                             </div>
-                            <div class="sm:col-span-2 md:col-span-1">
+
+                            <div class="sm:col-span-1">
                                 <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company
                                     Name</label>
                                 <div class="mt-2.5">
                                     <input type="text" name="company" id="company" autocomplete="organization"
                                         aria-required="true" required
-                                        class="bg-white h-16 md:text-xl font-light block w-full rounded-md border-0 required:focus:ring-red-300 px-3.5 py-2 focus:outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                        class="bg-white h-16 md:text-md font-light block w-full rounded-md border-0 required:focus:ring-red-300 px-3.5 py-2 focus:outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                                </div>
+                            </div>
+                            <div class="">
+                                <label for="service"
+                                    class="block text-sm font-semibold leading-6 text-gray-900">Service</label>
+                                <div class="mt-2.5">
+                                    <div class="w-full">
+                                        <select class="" id="service" multiple x-data="multiselect">
+                                            <optgroup label="Services">
+                                                <option value="1">outsourced CC</option>
+                                                <option value="2">Contact Center</option>
+                                                <option value="3">ERP</option>
+                                                <option value="4">ITaas</option>
+                                                <option value="5">WEb Development</option>
+                                                <option value="6">PBX</option>
+                                                <option value="7">CRM</option>
+                                                <option value="8">Zoho</option>
+                                            </optgroup>
+
+                                        </select>
+
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="sm:col-span-3">
+                            <div class="sm:col-span-2">
                                 <label for="message"
                                     class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
                                 <div class="mt-2.5">
