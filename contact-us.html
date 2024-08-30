@@ -219,13 +219,13 @@
                 <div>
                     <form action="#" id="contact-us" method="POST" class="mx-auto mt-16 max-w-4xl sm:mt-20">
 
-                        <div id="plan-cont" class="lg:p-5  my-5 rounded-3xl bg-plan text-white text-center">
+                        <!-- <div id="plan-cont" class="lg:p-5  my-5 rounded-3xl bg-plan text-white text-center">
                             <p class="text-xs">Please Submit Your Details For</p>
                             <h1 id="plan" class="text-7xl font-bold my-10">CC Ultra Inquiry</h1>
                             <h1 class="text-8xl font-bold non-ultra">$80</h1>
                             <h1 class="text-xl non-ultra">Per Month</h1>
                             <input type="hidden" name="plan" id="plans">
-                        </div>
+                        </div> -->
 
                         <div class="grid grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2">
                             <div>
@@ -340,8 +340,12 @@
                     <div class="block">
                         <a class="block text-gray-500" href="/about-us.html">About Us</a>
                         <a class="block text-gray-500" href="#">Talkcoms Group</a>
-                        <a class="block text-gray-500" href="">Privacy</a>
-                        <a class="block text-gray-500" href="">Terms of Use</a>
+                        <a class="block text-gray-500"
+                            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=6e230460-0c63-4508-b172-2ca4bbed0325">Privacy</a>
+
+                        <a class="block text-gray-500" target="_blank"
+                            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=ea802309-46cd-4afa-8b87-4525ab3ad7a1">Terms
+                            of Use</a>
                     </div>
                 </div>
                 <div class="my-2 lg:my-0 w-full">
@@ -351,7 +355,9 @@
                         <a class="block text-gray-500" href="#">Features</a>
                         <a class="block text-gray-500" href="#">Pricing</a>
                         <a class="block text-gray-500" href="">Download Profile</a>
-                        <a class="block text-gray-500" href="">Terms of Use</a>
+                        <a class="block text-gray-500" target="_blank"
+                            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=ea802309-46cd-4afa-8b87-4525ab3ad7a1">Terms
+                            of Use</a>
                     </div>
                 </div>
                 <div class="my-2 lg:my-0">
@@ -591,27 +597,27 @@
     <script src="./js/main.js"></script>
     <script src="./js/contact.js"></script>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const plan = urlParams.get('plan');
+        // const urlParams = new URLSearchParams(window.location.search);
+        // const plan = urlParams.get('plan');
 
-        if (plan) {
-            $('#plan-cont').fadeIn();
-            if (plan === 'basic') {
-                $('#plan').text('CC Basic Inquiry');
-            } else if (plan === 'ultra') {
-                $('#plan').text('CC Ultra Inquiry');
-                $('.non-ultra').fadeOut();
-            } else if (plan === 'advanced') {
-                $('#plan').text('CC Advanced Inquiry');
-            } else if (plan === 'plus') {
-                $('#plan').text('CC Plus Inquiry');
-            }
+        // if (plan) {
+        //     $('#plan-cont').fadeIn();
+        //     if (plan === 'basic') {
+        //         $('#plan').text('CC Basic Inquiry');
+        //     } else if (plan === 'ultra') {
+        //         $('#plan').text('CC Ultra Inquiry');
+        //         $('.non-ultra').fadeOut();
+        //     } else if (plan === 'advanced') {
+        //         $('#plan').text('CC Advanced Inquiry');
+        //     } else if (plan === 'plus') {
+        //         $('#plan').text('CC Plus Inquiry');
+        //     }
 
 
 
-        } else {
-            $('#plan-cont').fadeOut();
-        }
+        // } else {
+        //     $('#plan-cont').fadeOut();
+        // }
     </script>
 </body>
 

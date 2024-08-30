@@ -734,8 +734,8 @@
             <h1 class="text-blue-800 mb-20 text-centerlg:text-5xl text-2xl font-bold">Product Pricing & Packaging</h1>
 
             <div class="grid lg:grid-cols-4  text-white text-center lg:gap-4 toslide2">
-                <a href="/contact-us.html?plan=basic"
-                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105  flex flex-col">
+                <a href="" id="basic"
+                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105  flex flex-col plan">
                     <div class="p-5 py-6 bg-plan rounded-t-2xl lg:h-52">
                         <h1 class="text-3xl">CC Basic</h1>
                         <h1 class="text-8xl font-bold ">$70</h1>
@@ -760,8 +760,8 @@
                         </div>
                     </div>
                 </a>
-                <a href="/contact-us.html?plan=plus"
-                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105 flex flex-col">
+                <a href="" id="plus"
+                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105 flex flex-col plan">
                     <div class="p-5 py-6 bg-plan rounded-t-2xl lg:h-52">
                         <h1 class="text-3xl">CC Plus</h1>
                         <h1 class="text-8xl font-bold ">$75</h1>
@@ -793,8 +793,8 @@
                         </button>
                     </div>
                 </a>
-                <a href="/contact-us.html?plan=advanced"
-                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105 flex flex-col">
+                <a href="" id="advanced"
+                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105 flex flex-col plan">
                     <div class="p-5 py-6 bg-plan rounded-t-2xl lg:h-52">
                         <h1 class="text-3xl">CC Advanced</h1>
                         <h1 class="text-8xl font-bold ">$80</h1>
@@ -826,8 +826,8 @@
                         </button>
                     </div>
                 </a>
-                <a href="/contact-us.html?plan=ultra"
-                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105 flex flex-col">
+                <a href="" id="ultra"
+                    class="border rounded-2xl cursor-pointer hover:shadow-xl lg:transition hover:scale-105 flex flex-col plan">
                     <div class="p-5 py-6 bg-ultraplan rounded-t-2xl h-52 flex items-center justify-center">
                         <!-- <h1 class="text-3xl">CC Basic</h1> -->
                         <h1 class="text-7xl font-bold ">CC Ultra</h1>
@@ -1576,8 +1576,12 @@
                     <div class="block">
                         <a class="block text-gray-500" href="/about-us.html">About Us</a>
                         <a class="block text-gray-500" href="#">Talkcoms Group</a>
-                        <a class="block text-gray-500" href="">Privacy</a>
-                        <a class="block text-gray-500" href="">Terms of Use</a>
+                        <a class="block text-gray-500"
+                            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=6e230460-0c63-4508-b172-2ca4bbed0325">Privacy</a>
+
+                        <a class="block text-gray-500" target="_blank"
+                            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=ea802309-46cd-4afa-8b87-4525ab3ad7a1">Terms
+                            of Use</a>
                     </div>
                 </div>
                 <div class="my-2 lg:my-0 w-full">
@@ -1587,7 +1591,9 @@
                         <a class="block text-gray-500" href="#">Features</a>
                         <a class="block text-gray-500" href="#">Pricing</a>
                         <a class="block text-gray-500" href="">Download Profile</a>
-                        <a class="block text-gray-500" href="">Terms of Use</a>
+                        <a class="block text-gray-500" target="_blank"
+                            href="https://app.termly.io/policy-viewer/policy.html?policyUUID=ea802309-46cd-4afa-8b87-4525ab3ad7a1">Terms
+                            of Use</a>
                     </div>
                 </div>
                 <div class="my-2 lg:my-0">
@@ -1818,6 +1824,90 @@
 
     </div>
 
+    <!-- Modal toggle -->
+
+
+
+
+    <!-- Main modal -->
+    <div id="plan-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-lg max-h-full ">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow lg:p-4">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
+                    <div>
+                        <small class="text-xs text-[#0D80BA]">Please Submit Your Details For</small>
+                        <h3 id="selected-plan" class="text-4xl font-bold text-[#262262]">
+                            CC Ultra Inquiry
+                        </h3>
+                    </div>
+                    <button type="button" id="close-plan-modal"
+                        class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center daeks:hover:bg-gray-600 daeks:hover:text-white"
+                        data-modal-hide="plan-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                    <form id="inquiry" class="space-y-4" action="#">
+                        <div>
+                            <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">Full
+                                Name <span class="text-red-500">*</span></label>
+                            <div class="mt-2.5">
+                                <input type="text" name="first-name" id="first-name-inquiry" autocomplete="given-name"
+                                    required
+                                    class="sm:text-sm sm:leading-6 h-12 md:text-md font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 ">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email
+                                <span class="text-red-500">*</span></label>
+                            <div class="mt-2.5">
+                                <input type="text" name="email" id="email-inquiry" autocomplete="family-name" required
+                                    class="block h-12 md:text-xl font-light w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2 md:col-span-1">
+                            <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company
+                                Name</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="company" id="company" autocomplete="organization" required
+                                    class="h-12 md:text-md font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+                            <div class="mt-2.5">
+                                <textarea name="message" id="message" rows="3" required
+                                    class="md:text-lg font-light block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="text-md bg-talkgreen h-12 w-full text-white rounded font-semibold justify-center items-center flex leading-6 p-5 transition-all">Submit
+                            <div class="spinner hidden"><svg aria-hidden="true"
+                                    class="w-7 mx-4 h-8 text-white animate-spin  fill-blue-600" viewBox="0 0 100 101"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                                        fill="currentFill" />
+                                </svg></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -1832,6 +1922,74 @@
         var mobileslider = new KeenSlider("#mobile-keen-slider")
     </script>
     <script src="/js/contact.js"></script>
+
+    <button id="toogle" data-modal-target="plan-modal" data-modal-toggle="plan-modal"
+        class=" hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center daeks:bg-blue-600 daeks:hover:bg-blue-700 daeks:focus:ring-blue-800"
+        type="button">
+        Toggle modal
+    </button>
+
+    <script>
+        $('.plan').click(function (e) {
+            e.preventDefault();
+            const $targetEl = document.getElementById('plan-modal');
+            var clickedId = $(this).attr('id');
+
+            switch (clickedId) {
+                case 'basic':
+                    $('#selected-plan').text('CC Basic Inquiry');
+                    break;
+                case 'advanced':
+                    $('#selected-plan').text('CC Advanced Inquiry');
+                    break;
+                case 'plus':
+                    $('#selected-plan').text('CC Plus Inquiry');
+                    break;
+                case 'ultra':
+                    $('#selected-plan').text('CC Ultra Inquiry');
+                    break;
+                default:
+                    break;
+            }
+
+
+            $('#toogle').trigger('click');
+        });
+        $('#inquiry').submit(function (e) {
+            e.preventDefault();
+            sendMail();
+
+        });
+
+        const sendMail = () => {
+
+            const fullname = $('#first-name-inquiry').val();
+            const email = $('#email-inquiry').val();
+            const service = $('#selected-plan').text();
+
+            var data = {
+                service_id: 'zohoservice01',
+                template_id: 'talkcomsinquiry',
+                user_id: 'OjIkylChJR37bSCEL',
+                template_params: {
+                    'clientname': fullname,
+                    'email': email,
+                    'service': service.slice(0, -7)
+                }
+            };
+
+            $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                type: 'POST',
+                data: JSON.stringify(data),
+                contentType: 'application/json'
+            }).done(function () {
+                $('#close-plan-modal').trigger('click');
+            }).fail(function (error) {
+                console.log('Oops... ' + JSON.stringify(error));
+                alert('Failed to send email')
+            });
+        }
+    </script>
 
 </body>
 
