@@ -144,6 +144,11 @@ body {
     border-radius: 18px;
 }
 
+.gradient-float {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(138, 196, 64, 0.25) 0%, rgba(13, 128, 186, 0) 100%);
+    /* transform: rotate(54.82deg); */
+}
+
 a {
     cursor: pointer;
 }
