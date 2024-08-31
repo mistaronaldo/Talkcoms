@@ -149,6 +149,11 @@ body {
     /* transform: rotate(54.82deg); */
 }
 
+.bg-blog {
+    background-size: cover;
+    height: 26rem;
+}
+
 a {
     cursor: pointer;
 }
